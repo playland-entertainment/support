@@ -1,0 +1,724 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CtaSection from '../components/CtaSection.astro';
+---
+
+<Layout
+  title="よくある質問（Q&A） | トラック運送事業者の人材不足・物価高騰対策支援補助金"
+  description="支援補助金に関するよくある質問をカテゴリーごとにまとめました。対象者・支援内容・申請条件・リース契約等。広島県トラック協会。"
+>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner">
+        <p class="page-hero-label">よくある質問</p>
+        <h1 class="page-hero-title">Q&A一覧</h1>
+        <p class="page-hero-lead">
+          申請に関するよくあるご質問をカテゴリー別にまとめました。
+          ご不明な点は支援センター（082-232-3380）までお気軽にお電話ください。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 目次 -->
+  <div class="sticky-nav">
+    <div class="container">
+      <div class="sticky-nav-inner">
+        <a href="#target" class="tag tag--orange">対象者</a>
+        <a href="#dx" class="tag tag--orange">DX推進</a>
+        <a href="#seminar" class="tag tag--orange">セミナー</a>
+        <a href="#conditions" class="tag tag--orange">申請条件</a>
+        <a href="#workplace" class="tag tag--orange">環境整備・暑熱対策</a>
+        <a href="#tire" class="tag tag--orange">エンタイヤ</a>
+        <a href="#amount" class="tag tag--orange">支援金額</a>
+        <a href="#lease" class="tag tag--orange">リース契約</a>
+        <a href="#other" class="tag tag--orange">その他</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container container--narrow">
+
+      <!-- 対象者について -->
+      <div class="faq-section fade-up" id="target">
+        <h2 class="faq-section-title">
+          <span class="tag tag--orange" style="font-size:var(--text-sm);margin-bottom:var(--space-md);display:inline-flex">対象者について</span>
+        </h2>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q1. 営業用貨物自動車保有台数の数え方を教えてください。被牽引車は含みますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            保有台数は、事業者の規模を区別するために設定しています。本事業では「普通・小型・牽引・被牽引」のうち、<strong>「被牽引」を除く台数の合計</strong>で判断します。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q2. 保有台数は、いつの時点で確認されますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            申請時に添付された最新の、一般貨物自動車運送事業の事業計画（事業用自動車の数）変更事前届出書（変更認可申請書）の台数で確認します。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q3. 資本金8,000万円・従業員800人・広島保有台数800台の事業者は対象になりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            申請の対象とはなりません。保有台数が50台を超えるため単独型は対象外です。また、保有台数50両以下の事業者と連携して支援対象事業を行わないため、複数者連携型の対象ともなりません。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q4. 岡山本店と広島支店など複数事業所が連携してシステムを導入する場合、複数者連携型になりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            1事業者であることから、複数者連携にはなりません。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q5. 広島県内に複数の営業所がある場合、システムを導入した営業所だけで保有台数を判定しますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            県内の全ての営業所の保有台数を合算して判定します。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q6. 県外の事業所も含めて一体的にシステム導入する場合、県外分の経費も申請できますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            原則、広島県内の事業所で使用するものが対象です。ただし、他県の事業所も含めて一体的に使用することで広島県内の事業所にも効果が得られると認められる場合は、全額補助対象となる場合があります（例：県外のトラックを広島県内で活用している場合）。なお、県外事業所のみシステム導入する場合は対象外です。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q7. 広島県内の保有台数が51両以上の事業者ですが、グループ会社と連携してDXに取り組む場合は対象になりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            連携するグループ会社に保有台数50両以下の企業が含まれている場合には申請対象になります。
+          </div></div>
+        </div>
+      </div>
+
+      <!-- DX推進について -->
+      <div class="faq-section fade-up" id="dx">
+        <h2 class="faq-section-title">
+          <span class="tag tag--orange" style="font-size:var(--text-sm);margin-bottom:var(--space-md);display:inline-flex">支援内容 DX推進について</span>
+        </h2>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q8. 改正物流法への対応のために導入するシステムとはどのようなものですか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            適正な運賃の収受や運送・荷役等の効率化など、法改正への対応に必要なシステムが対象です。具体的には、荷主交渉に必要な運送業務に係るデータを蓄積・可視化するシステムや、協力会社と連携した輸送網の集約・配送共同化のために必要なシステムです。<strong>単にコストダウンを目的としたシステムは支援対象となりません。</strong>
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q9. 「実運送体制管理簿の作成に必要な下請構造の可視化に必要なシステム」とはどういうものですか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            令和7年4月1日施行の改正貨物自動車運送事業法により、貨物の重量が1.5トン以上の場合、元請事業者に対し実運送事業者の名称や請負階層等を記載した実運送体制管理簿の作成・情報通知が義務付けられました。この義務の履行に必要なシステムの導入が対象です。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q10. 実運送体制管理簿の可視化システムは、関わる全事業者（元・子・孫）がシステムを導入する必要がありますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            運送に関わる全ての事業者がシステムを導入する必要はありません。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q11. ハードウェアは対象になりますか。サーバー用PC・モニターはどうですか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            支援対象となるシステムのために<strong>専用として使用する</strong>ハードウェアは対象です。汎用性の高いハードウェア（PC・スマートフォン・タブレット・モニター等）は、支援対象システム専用であることが確認できる写真等を提出してください。写真等で判別できない場合は支援金センターが現地調査を実施します。<br><br>
+            ※交付決定後に対象ハードウェアを支援対象事業以外で使用した場合、支援金の全部または一部の返納を求めます。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q12. システムは新規導入ですが、運行車載器は中古品を購入予定です。対象になりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            中古品は補助対象外です。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q13. クラウド型デジタコを導入する場合、月額の通信料はどこまで支援対象になりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            申請時に支払実績が確認できる当年度分の経費が対象となります。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q14. デジタコの購入だけでも支援金の対象になりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            対象外です。支援対象となるのは、運送業務に係るデータを可視化して荷主等との交渉や経営改善等を行うために必要なシステムの導入です。例えば、運行管理システムなど荷主交渉等への効果が見込まれるシステムを導入し、それに必要な機能向上したデジタコを購入した場合、その購入費用が対象となります。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q15. デジタコを従来のものから最新のものに入れ替えました。支援対象になりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            デジタコの入れ替えだけでは対象になりません。運行管理システムなど荷主交渉等への効果が見込まれるシステムを導入し、それに必要な機能向上したデジタコを購入した場合、その購入費用が対象となります。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q16. ドライブレコーダーの購入は支援対象になりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            単なる事故防止目的のドラレコ導入は対象外です。ただし、以下の場合は購入費用が対象となります。<br><br>
+            ・運行管理システムの導入に合わせて、その運用に必要なデジタコ一体型のドラレコを購入する場合<br>
+            ・目標物や待機場所・事故・工事状況等を映像化し他のドライバーと情報共有することにより効率的な運行管理および経営改善に資するシステムを導入し、その運用に必要なドラレコを導入した場合<br><br>
+            この場合、ドラレコ購入の必要性・目的を導入計画に明記してください。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q17. アルコールチェッカーは支援対象になりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            対象外です。本事業は改正物流法に対応するシステムの導入に対して支援するものであり、アルコールチェッカーは対象になりません。なお、Gマーク認定事業者かつ広島県トラック協会会員の場合は「安全装置等導入促進助成事業」の助成対象機器に該当する場合がありますので、協会にお問い合わせください。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q18. 勤怠管理システムは支援対象になりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            荷主等との交渉に必要なデータを可視化するために、リアルタイムで労務管理等が可能となるシステムを導入するような場合など、支援目的に沿うものであれば交付対象となります。判断に迷う場合は支援金センターにご相談ください。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q19. 求人のためのホームページ作成は支援対象になりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            HPの作成は支援金の交付対象にはなりません。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q20. 現在のシステムをクラウド版へアップグレードする場合、ソフト・ライセンス・開発費・PCは対象になりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            適正な運賃の収受や運送・荷役等の効率化を目的としたシステムのアップグレードは交付対象になります。ソフト・ライセンス・開発費（顧客専用のシステムを組む場合）は導入経費の対象です。PCなど汎用性の高いハードウェアは、専ら支援事業に使用するものであることが条件で、確認できる写真等の提出が必要です。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q21. 「当年度分」とはいつからいつまでですか。月額利用料の前払いはどう扱われますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            「当年度」は令和8年4月1日から令和9年3月31日までです。申請までに支払実績が確認できるものが対象となります。月額前払いの場合も、申請時までに支払っていれば対象となります。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q22. 月額利用料など複数年分まとめて支払っている場合、当年度分だけが対象ですか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            複数年分まとめて支払った場合、当年度分に係る費用が対象となります。例：令和8年4月から月額利用料1万円のシステムを導入し、3年分の月額利用料36万円を一括で支払った場合、当年度分12万円が支援対象となります。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q23. クラウド利用料の補助対象範囲を教えてください。他事業と共有する場合は按分できますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            補助対象は、専ら支援対象事業のために利用するクラウドサービスやWEBプラットフォーム等の利用費です。クラウドサービス利用に付帯する経費（ルーター使用料・プロバイダ契約料・通信料等）も補助対象ですが、補助事業に必要な最低限の経費に限ります。<br><br>
+            他事業と共有するものは、利用の割合等が分かる場合であっても<strong>支援対象として認められません</strong>。運送事業以外の事業と共有している場合は支援対象外です。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q24. 今まで使用していた通信料は導入経費になりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            従来からの契約で支払いをしているものは導入経費にはなりません。ただし、令和8年4月以降に支援対象となるシステムの導入のために契約変更した場合には導入経費になります。
+          </div></div>
+        </div>
+      </div>
+
+      <!-- セミナーについて -->
+      <div class="faq-section fade-up" id="seminar">
+        <h2 class="faq-section-title">
+          <span class="tag tag--orange" style="font-size:var(--text-sm);margin-bottom:var(--space-md);display:inline-flex">セミナーについて</span>
+        </h2>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q25. セミナー受講証明書はいつもらえますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            セミナー終了後にお渡しする予定となっております。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q26. セミナーに代理参加はできますか。ディーラーが数社まとめて受講してもいいですか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            セミナーは物流DXの推進のために開催するものであり、事業者の代理参加は開催趣旨と異なるため認めておりません。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q27. セミナーに参加できるのは代表者のみですか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            申請を行おうとする事業者の役員や従業員であれば、どなたでも参加可能です。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q28. リース会社と共同申請の場合、リース会社もセミナーに参加する必要がありますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            この場合、リース会社はセミナーに参加する必要はありません。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q29. 令和7年度のセミナーに参加している場合、セミナー参加の支援条件を満たしますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            令和7年度のセミナーに参加されている場合は、支援条件を満たします。この場合、お持ちの受講証明書を申請書に添付してください。
+          </div></div>
+        </div>
+      </div>
+
+      <!-- 申請条件・手続きについて -->
+      <div class="faq-section fade-up" id="conditions">
+        <h2 class="faq-section-title">
+          <span class="tag tag--orange" style="font-size:var(--text-sm);margin-bottom:var(--space-md);display:inline-flex">申請条件・手続きについて</span>
+        </h2>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q30. システム導入計画書の作成方法を教えてください。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            支援金センターで導入計画策定のサポートをしますので、お問い合わせください。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q31. 対象となるシステムはいつ導入したものですか。令和7年3月に契約したものは対象になりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            <strong>令和8年4月1日以降に契約・発注したもの</strong>が対象となります。また、申請時までに支払・システムの導入（車載器を購入する場合は取付）が完了し、システムが実装されていることが必要です。<br><br>
+            令和7年3月に契約したものは令和8年4月1日より前の契約のため対象外です。申請期限（令和9年1月29日）までに実装されないものも対象外となります。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q32. いつまでが支援金の対象になりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            令和9年1月29日に申請書類が支援金センターへ到着（必着）したものまでが支援金の交付対象となります。ただし、期限内でも予算枠に達する見込みとなった場合には、申請の受付を終了します。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q33. 申請に必要な「事業計画変更事前届出書の写し」ですが、変更がなく古いものしかない場合はどうすればよいですか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            古いものでも大丈夫です。なお、書類が見当たらない場合、代わりに提出できる書類はありませんので、広島運輸支局にご相談ください。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q34. フォローアップ調査とはどのようなものですか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            事業者のお持ちの課題や今後支援を希望する分野・支援方法といったニーズを把握したり、本事業の効果を測るための調査です。調査票は「申請者向けニーズ調査アンケート」として支援金交付決定通知に同封する予定です。支援条件となっていますので必ず提出してください。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q35. 支援対象事業の実績としてどのような内容が公開されますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            交付対象となった事業者名を公開する予定です（導入したシステムは記載しません）。複数者連携の場合は、グループ構成員全員の事業者名を掲載する予定です。フォローアップ調査の結果は事業者名が分からない形で集計結果を広島県や広島県トラック協会のHP等に公開することを検討しています。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q36. 支援金交付申請書兼誓約書の判子は実印が必要ですか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            実印でなくても大丈夫です。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q37. 年度内に何回でも申請できますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            可能です。1事業者の最大の額に達するまでは、複数回の申請を認めます。
+          </div></div>
+        </div>
+      </div>
+
+      <!-- 働きやすい環境整備・暑熱寒冷対策について -->
+      <div class="faq-section fade-up" id="workplace">
+        <h2 class="faq-section-title">
+          <span class="tag tag--orange" style="font-size:var(--text-sm);margin-bottom:var(--space-md);display:inline-flex">働きやすい環境整備・暑熱寒冷対策について</span>
+        </h2>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q38. 女性用トイレを新設する際に、老朽化した男性用トイレもあわせて改修する場合は対象になりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            女性用トイレの新設等の整備にあわせて実施する施設・設備工事は支援金の対象となります。なお、このような場合は事前に支援金センターへご相談ください。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q39. 暑熱・寒冷対策の経費について、飲食料品は箱単位で大量購入した場合でも対象になりませんか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            飲食料品は、導入価格の多少にかかわらず支援金の対象となりません。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q40. 暑熱対策パックの中にペットボトルや塩飴が含まれている場合はどうなりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            暑熱対策用品が複数種類パックにして販売している商品の場合、その中の1つに塩飴が入っている場合等は支援金の対象にできる場合があります。事前に支援金センターへご相談ください。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q41. 単価が千円（税抜）以上とのことですが、千円相当の冷却タオルが2枚セットの場合は対象になりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            商品が千円（税抜）以上であれば支援金の対象となります。
+          </div></div>
+        </div>
+      </div>
+
+      <!-- エンタイヤ・再生タイヤについて -->
+      <div class="faq-section fade-up" id="tire">
+        <h2 class="faq-section-title">
+          <span class="tag tag--orange" style="font-size:var(--text-sm);margin-bottom:var(--space-md);display:inline-flex">エンタイヤ・再生タイヤについて</span>
+        </h2>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q42. エコタイヤ・再生タイヤの支援金と、広島県トラック協会の助成金の重複申請はできますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            広島県トラック協会の会員であって中小企業の場合は、原則支援金の方の申請をお願いします。ただし、タイヤの単価が確認できないタイヤ賃貸借・メンテナンスプラン等の場合は支援金の対象外となりますので、協会の助成金の方へ申請をお願いします。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q43. 霊柩車へエコタイヤを導入する場合はどうすればよいですか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            霊柩車へのエコタイヤ導入については、対象となるタイヤか否かの判断が必要となりますので、申請の前に必ず支援金センターにご相談ください。
+          </div></div>
+        </div>
+      </div>
+
+      <!-- 支援金額について -->
+      <div class="faq-section fade-up" id="amount">
+        <h2 class="faq-section-title">
+          <span class="tag tag--orange" style="font-size:var(--text-sm);margin-bottom:var(--space-md);display:inline-flex">支援金額について</span>
+        </h2>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q44. 導入したシステムについて他の補助金を受け取っている場合、支援金額はどうなりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            本事業の支援金額から他の補助金額を差し引きます。他の補助金を受け取っている、または受け取る予定である場合は必ず申請前に支援金センターへご連絡ください。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q45. 複数者連携型と単独型の両方に申請した場合の支援金額の算定方法を教えてください。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            複数者連携型と単独型、それぞれを1件とカウントし支援金額を算出します（計2件）。ただし、同じシステム（対象物）で単独・複数者両方で申請することは二重取りになるため認められません。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q46. 複数のシステムを同時に導入する場合、補助額はどのように計算しますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            複数のシステムを同時に導入する場合、導入経費を合算して1件の申請とすることは可能です。ただし、1申請あたりの交付上限額は単独型100万円・複数者連携型1事業者あたり最大300万円です。1事業者の最大の額に達するまでは複数回の申請を認めます。単独型と複数者連携型の併用も可能です。
+          </div></div>
+        </div>
+      </div>
+
+      <!-- リース契約について -->
+      <div class="faq-section fade-up" id="lease">
+        <h2 class="faq-section-title">
+          <span class="tag tag--orange" style="font-size:var(--text-sm);margin-bottom:var(--space-md);display:inline-flex">リース契約について</span>
+        </h2>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q47. リース契約でシステムを導入する場合、申請はできますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            リース契約の場合、事業者がリース事業者に支払うリース料等から支援金相当額が減額されることを条件に、リース事業者と共同申請を行うことができます。リース事業者と共同申請しない場合でも申請は可能ですが、申請時に支払実績が確認できるリース料のみが補助対象経費となります。<br><br>
+            なお、単独型か複数者連携型かはトラック運送事業者間で連携しているかどうかで判断するため、トラック運送事業者1者とリース事業者1者の共同申請は単独型となります。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q48. リース事業者と共同申請する場合・しない場合の対象経費の考え方を教えてください。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            <strong>共同申請する場合：</strong>対象となる経費はリース事業者が機械装置・システムの販売元に対して当年度に支払う購入費用に限ります。事業者がリース事業者に支払うリース料そのものは対象経費となりません。<br><br>
+            <strong>共同申請しない場合：</strong>支援対象となるのは支払実績が確認できる当年度分のリース料に限ります。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q49. リース事業者と共同申請する場合、支援金の支払先をトラック運送事業者にすることはできますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            できません。事業者がリース事業者に支払うリース料等から支援金相当分が減額されることを条件として共同申請を認めているため、支援金の支払先はリース事業者となります。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q50. リース事業者と共同申請する場合、申請時に注意すべき事項はありますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            契約書等に以下の事項が明記されていることが必要です。<br>
+            ① リース料総額<br>
+            ② 対象システムの購入費用<br>
+            ③ 支援金額<br>
+            ④ リース手数料等<br>
+            ⑤ 支援金分減額後のリース料<br><br>
+            また、当年度中の支払実績が確認できるものの提出が必要です。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q51. リース契約にプロバイダー契約など数年分が含まれている場合、導入経費はどうなりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            複数年度にまたがる経費がある場合は、リース契約額から当年度分以外を差し引く必要があります。計算方法等については支援金センターにご相談ください。
+          </div></div>
+        </div>
+      </div>
+
+      <!-- その他 -->
+      <div class="faq-section fade-up" id="other">
+        <h2 class="faq-section-title">
+          <span class="tag tag--orange" style="font-size:var(--text-sm);margin-bottom:var(--space-md);display:inline-flex">その他</span>
+        </h2>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q52. 複数者連携型で申請の場合、添付書類は代表事業者分だけでよいですか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            代表事業者を含めグループ全ての事業者分の申請書および添付書類が必要です。それを代表事業者がまとめて支援金センターへ提出してください。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q53. 複数者連携型で申請の場合、代表事業者はどの事業者がなればよいですか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            代表事業者はどの事業者がなっても問題はありません。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q54. 導入したシステムを使用しなくなった場合はどうすればよいですか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            減価償却期間内（例：ソフトウェアの場合5年）に支援金の交付目的以外に使用・貸付・譲渡・廃棄等する場合は、財産処分承認申請書の提出が必要です。広島県トラック協会にご連絡ください。交付した支援金の一部を返還いただく可能性があります。<br><br>
+            リース事業者と共同申請した場合でリース契約期間の途中で解約する場合も、協会にご連絡ください。残リース期間分の支援金（契約期間で按分）をリース事業者から返金いただきます。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q55. 自社とベンダーで開発したシステムを他社にも販売したいのですが、申請上問題はありますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            自社に導入する場合であれば、ベンダーに支払った開発費が対象になります。他社に販売することは問題ありません。他社に販売する場合の収入は、要綱別表第1の収入等の対象外です。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q56. 割賦契約の場合の申請者は誰になりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            申請者は事業者になります。また、支援金振込先も事業者になります。
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Q57. 今回の支援金は圧縮記帳の適用対象となりますか。</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content"><div class="accordion-content-inner">
+            国の補助金を財源としておりますので、本支援金により固定資産を取得した場合は圧縮記帳の対象となります。
+          </div></div>
+        </div>
+
+      </div>
+
+      <div class="notice notice--info fade-up mt-2xl">
+        <svg class="notice-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+        </svg>
+        <div>
+          上記に記載のない質問やご不明な点は、<strong>支援センター（082-232-3380）</strong>までお電話ください。受付時間：9:00〜17:00（土日祝日・年末年始・お盆を除く）
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <CtaSection />
+</Layout>
+
+<style>
+.faq-section {
+  margin-bottom: var(--space-3xl);
+}
+.faq-section-title {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--warm-200);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+</style>

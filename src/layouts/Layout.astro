@@ -1,0 +1,105 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FloatingCta from '../components/FloatingCta.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = '広島県内の中小トラック運送事業者を対象に、DX推進・職場環境整備・エンタイヤ導入等を支援。最大300万円。令和9年1月29日まで受付。'
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <link rel="icon" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <Header />
+  <main>
+    <slot />
+  </main>
+  <Footer />
+  <FloatingCta />
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Header scroll shadow
+      const header = document.querySelector('.site-header');
+      if (header) {
+        window.addEventListener('scroll', () => {
+          header.classList.toggle('scrolled', window.scrollY > 10);
+        }, { passive: true });
+      }
+
+      // Mobile menu toggle
+      const toggle = document.querySelector('.menu-toggle');
+      const mobileNav = document.querySelector('.mobile-nav');
+      if (toggle && mobileNav) {
+        toggle.addEventListener('click', () => {
+          const isOpen = mobileNav.classList.toggle('open');
+          toggle.classList.toggle('active', isOpen);
+          document.body.style.overflow = isOpen ? 'hidden' : '';
+        });
+        mobileNav.querySelectorAll('a').forEach(a => {
+          a.addEventListener('click', () => {
+            mobileNav.classList.remove('open');
+            toggle.classList.remove('active');
+            document.body.style.overflow = '';
+          });
+        });
+      }
+
+      // Fade-up intersection observer
+      const fadeEls = document.querySelectorAll('.fade-up');
+      if (fadeEls.length && 'IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(
+          entries => entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          }),
+          { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+        );
+        fadeEls.forEach(el => observer.observe(el));
+      } else {
+        fadeEls.forEach(el => el.classList.add('visible'));
+      }
+
+      // Accordion
+      document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+        trigger.addEventListener('click', () => {
+          const item = trigger.closest('.accordion-item') as HTMLElement;
+          const content = item.querySelector('.accordion-content') as HTMLElement;
+          const isOpen = item.classList.contains('open');
+
+          // Close all siblings
+          item.parentElement?.querySelectorAll('.accordion-item.open').forEach(openItem => {
+            if (openItem !== item) {
+              openItem.classList.remove('open');
+              (openItem.querySelector('.accordion-content') as HTMLElement).style.maxHeight = '0';
+            }
+          });
+
+          item.classList.toggle('open', !isOpen);
+          content.style.maxHeight = isOpen ? '0' : content.scrollHeight + 'px';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
