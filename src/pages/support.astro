@@ -15,8 +15,7 @@ import CtaSection from '../components/CtaSection.astro';
         <p class="page-hero-label">支援内容</p>
         <h1 class="page-hero-title">4つのカテゴリーで支援</h1>
         <p class="page-hero-lead">
-          人材不足・物価高騰対策として、以下の取り組みに対して支援金を交付します。
-          各カテゴリーの詳細をご確認ください。
+          人材不足・物価高騰対策として、以下の取り組みに対して支援金を交付します。<br class="hidden sm:inline">各カテゴリーの詳細をご確認ください。
         </p>
       </div>
     </div>
@@ -38,8 +37,10 @@ import CtaSection from '../components/CtaSection.astro';
   <section class="feature-section" id="dx">
     <div class="container">
       <div class="fade-up">
-        <span class="tag tag--orange mb-md">① DX推進関係</span>
-        <h2 class="section-title">賃上げ原資の確保や生産性向上に必要なシステムの導入</h2>
+        <div class="card-header">
+          <div class="card-number">1</div>
+          <h2 class="section-title">賃上げ原資の確保や生産性向上に必要なシステムの導入</h2>
+        </div>
       </div>
 
       <div class="amount-highlight mb-2xl mt-xl fade-up">
@@ -105,8 +106,10 @@ import CtaSection from '../components/CtaSection.astro';
   <section class="feature-section" id="women" style="background:var(--warm-50)">
     <div class="container">
       <div class="fade-up">
-        <span class="tag tag--orange mb-md">② 人材確保</span>
-        <h2 class="section-title">女性ドライバーの働きやすさにつながる施設・設備等の整備</h2>
+        <div class="card-header">
+          <div class="card-number">2</div>
+          <h2 class="section-title">女性ドライバーの働きやすさにつながる施設・設備等の整備</h2>
+        </div>
       </div>
 
       <div class="amount-highlight mb-2xl mt-xl fade-up">
@@ -143,8 +146,10 @@ import CtaSection from '../components/CtaSection.astro';
   <section class="feature-section" id="heat">
     <div class="container">
       <div class="fade-up">
-        <span class="tag tag--orange mb-md">③ 職場環境整備</span>
-        <h2 class="section-title">暑熱・寒冷対策を目的とした設備等の導入</h2>
+        <div class="card-header">
+          <div class="card-number">3</div>
+          <h2 class="section-title">暑熱・寒冷対策を目的とした設備等の導入</h2>
+        </div>
       </div>
 
       <div class="amount-highlight mb-2xl mt-xl fade-up">
@@ -182,8 +187,10 @@ import CtaSection from '../components/CtaSection.astro';
   <section class="feature-section" id="tire" style="background:var(--warm-50)">
     <div class="container">
       <div class="fade-up">
-        <span class="tag tag--orange mb-md">④ コスト負担軽減</span>
-        <h2 class="section-title">エコタイヤ・再生タイヤの導入</h2>
+        <div class="card-header">
+          <div class="card-number">4</div>
+          <h2 class="section-title">エコタイヤ・再生タイヤの導入</h2>
+        </div>
       </div>
 
       <div class="amount-highlight mb-2xl mt-xl fade-up">

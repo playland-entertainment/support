@@ -3,7 +3,10 @@
     "allow": [
       "Bash(npm --version)",
       "Bash(npm install:*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "WebFetch(domain:www.torakyo-hiroshima.or.jp)",
+      "Bash(curl -s \"https://www.torakyo-hiroshima.or.jp/support/assets/images/hero-image.svg\" -o /Users/kazuki_matsumori/Documents/GitHub/support/public/hero-image.svg)",
+      "Bash(curl -s \"https://www.torakyo-hiroshima.or.jp/support/assets/images/body-text.svg\" -o /Users/kazuki_matsumori/Documents/GitHub/support/public/body-text.svg)"
     ]
   }
 }

@@ -15,8 +15,7 @@ import CtaSection from '../components/CtaSection.astro';
         <p class="page-hero-label">申請方法</p>
         <h1 class="page-hero-title">申請から交付までの流れ</h1>
         <p class="page-hero-lead">
-          設備導入完了後に必要書類を提出してください。申請は導入後に行います。
-          提出期限は<strong>令和9年1月29日（金）必着</strong>です。
+          設備導入完了後に必要書類を提出してください。申請は導入後に行います。<br class="hidden sm:inline">提出期限は<strong>令和9年1月29日（金）必着</strong>です。
         </p>
       </div>
     </div>
@@ -32,28 +31,31 @@ import CtaSection from '../components/CtaSection.astro';
 
       <div class="steps mt-2xl stagger">
         <div class="step fade-up">
-          <div class="step-number">1</div>
+          <div class="step-number">STEP1</div>
           <h3 class="step-title">事前相談</h3>
           <p class="step-desc">
             支援センターに電話で申請予定額（概算）をお伝えください。残予算の目安等をご案内します。
           </p>
         </div>
+        <div class="step-arrow" aria-hidden="true"></div>
         <div class="step fade-up">
-          <div class="step-number">2</div>
+          <div class="step-number">STEP2</div>
           <h3 class="step-title">設備導入・整備</h3>
           <p class="step-desc">
             令和8年4月1日以降に対象の設備・システムを契約・発注し、導入を完了してください。
           </p>
         </div>
+        <div class="step-arrow" aria-hidden="true"></div>
         <div class="step fade-up">
-          <div class="step-number">3</div>
+          <div class="step-number">STEP3</div>
           <h3 class="step-title">書類作成・提出</h3>
           <p class="step-desc">
             必要書類を揃え、支援センターへ追跡可能な方法で郵送（持参も可）。令和9年1月29日必着。
           </p>
         </div>
+        <div class="step-arrow" aria-hidden="true"></div>
         <div class="step fade-up">
-          <div class="step-number">4</div>
+          <div class="step-number">STEP4</div>
           <h3 class="step-title">審査・交付</h3>
           <p class="step-desc">
             申請内容を審査のうえ交付決定。口座振込にて支援金を交付します。
@@ -63,28 +65,8 @@ import CtaSection from '../components/CtaSection.astro';
     </div>
   </section>
 
-  <!-- 提出先 -->
-  <section class="section--sm" style="background:var(--warm-50)">
-    <div class="container">
-      <div class="fade-up">
-        <div class="heading-label">提出先</div>
-        <h2 class="section-title" style="font-size:var(--text-2xl)">書類提出先・お問い合わせ先</h2>
-      </div>
-      <div class="feature-box mt-xl fade-up" style="background:#fff;max-width:680px;border:1px solid var(--warm-200)">
-        <h3 class="feature-box-title">書類提出先</h3>
-        <p style="font-size:var(--text-sm);line-height:2;color:var(--color-text-secondary)">
-          〒733-0032 広島市西区己斐観音町1-24 P&P平和大通りビル2F<br>
-          <strong style="color:var(--navy-800)">トラック運送事業者の人材不足・物価高騰対策支援センター</strong><br>
-          TEL: <a href="tel:082-232-3380" style="color:var(--color-primary);font-weight:600">(082)232-3380</a>
-          FAX: 082-297-7751<br>
-          受付: 9:00〜17:00（土日祝日・年末年始・お盆を除く）
-        </p>
-      </div>
-    </div>
-  </section>
-
   <!-- 必要書類 -->
-  <section class="section">
+  <section class="section" style="background:var(--warm-50)">
     <div class="container">
       <div class="fade-up">
         <div class="heading-label">必要書類</div>
@@ -95,14 +77,14 @@ import CtaSection from '../components/CtaSection.astro';
       <div class="mt-2xl">
         <div class="accordion-item fade-up">
           <button class="accordion-trigger">
-            <span>① DX推進（システム導入）の必要書類</span>
+            <span class="accordion-cat"><span class="cat-badge-num">1</span>DX推進（システム導入）の必要書類</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M6 9l6 6 6-6"/>
             </svg>
           </button>
           <div class="accordion-content">
             <div class="accordion-content-inner">
-              <ol style="list-style:decimal;padding-left:1.5em;display:flex;flex-direction:column;gap:var(--space-sm)">
+              <ul class="doc-list">
                 <li>支援金交付申請書兼誓約書（別記様式第1号）</li>
                 <li>運送事業の許可書の写し</li>
                 <li>事業計画（事業用自動車の数・変更予定等届出書の写し）（広島運輸支局認証書済）</li>
@@ -114,21 +96,21 @@ import CtaSection from '../components/CtaSection.astro';
                 <li>注文書または請求書の写し（品名・品目・数量・単価・金額・年月日を記載）</li>
                 <li>支払証の写し（リース：リース契約書の写し＋按分、割賦：割賦契約書／物件取得書の写し）</li>
                 <li>預金通帳の口座名義記載ページの写し</li>
-              </ol>
+              </ul>
             </div>
           </div>
         </div>
 
         <div class="accordion-item fade-up">
           <button class="accordion-trigger">
-            <span>② 女性ドライバー環境整備の必要書類</span>
+            <span class="accordion-cat"><span class="cat-badge-num">2</span>女性ドライバー環境整備の必要書類</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M6 9l6 6 6-6"/>
             </svg>
           </button>
           <div class="accordion-content">
             <div class="accordion-content-inner">
-              <ol style="list-style:decimal;padding-left:1.5em;display:flex;flex-direction:column;gap:var(--space-sm)">
+              <ul class="doc-list">
                 <li>支援金交付申請書兼誓約書（別記様式第1号）</li>
                 <li>運送事業の許可書の写し</li>
                 <li>施設・設備等の整備状況報告書（別紙4）</li>
@@ -136,21 +118,21 @@ import CtaSection from '../components/CtaSection.astro';
                 <li>施設・設備等の事業実施前後のカラー画像（各1枚以上）</li>
                 <li>支払証の写し</li>
                 <li>預金通帳の口座名義記載ページの写し</li>
-              </ol>
+              </ul>
             </div>
           </div>
         </div>
 
         <div class="accordion-item fade-up">
           <button class="accordion-trigger">
-            <span>③ 暑熱・寒冷対策の必要書類</span>
+            <span class="accordion-cat"><span class="cat-badge-num">3</span>暑熱・寒冷対策の必要書類</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M6 9l6 6 6-6"/>
             </svg>
           </button>
           <div class="accordion-content">
             <div class="accordion-content-inner">
-              <ol style="list-style:decimal;padding-left:1.5em;display:flex;flex-direction:column;gap:var(--space-sm)">
+              <ul class="doc-list">
                 <li>支援金交付申請書兼誓約書（別記様式第1号）</li>
                 <li>運送事業の許可書の写し</li>
                 <li>設備導入等報告書（別紙6）</li>
@@ -158,21 +140,21 @@ import CtaSection from '../components/CtaSection.astro';
                 <li>設備導入等の状況がわかるカラー画像（1枚以上）</li>
                 <li>支払証の写し</li>
                 <li>預金通帳の口座名義記載ページの写し</li>
-              </ol>
+              </ul>
             </div>
           </div>
         </div>
 
         <div class="accordion-item fade-up">
           <button class="accordion-trigger">
-            <span>④ エコタイヤ等導入の必要書類</span>
+            <span class="accordion-cat"><span class="cat-badge-num">4</span>エコタイヤ等導入の必要書類</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M6 9l6 6 6-6"/>
             </svg>
           </button>
           <div class="accordion-content">
             <div class="accordion-content-inner">
-              <ol style="list-style:decimal;padding-left:1.5em;display:flex;flex-direction:column;gap:var(--space-sm)">
+              <ul class="doc-list">
                 <li>支援金交付申請書兼誓約書（別記様式第1号）</li>
                 <li>運送事業の許可書の写し</li>
                 <li>事業計画変更予定等届出書の写し</li>
@@ -180,14 +162,18 @@ import CtaSection from '../components/CtaSection.astro';
                 <li>注文書または請求書の写し（品名・品目・数量・単価・金額・年月日を記載）</li>
                 <li>支払証の写し</li>
                 <li>預金通帳の口座名義記載ページの写し</li>
-              </ol>
+              </ul>
             </div>
           </div>
         </div>
       </div>
 
+      <div class="text-center mt-2xl fade-up">
+        <a href="/download/" class="btn btn--primary btn--lg">申請書類をダウンロード</a>
+      </div>
+
       <!-- 申請注意事項 -->
-      <div class="feature-box mt-2xl fade-up">
+      <div class="feature-box mt-2xl fade-up" style="border:2px solid var(--color-primary)">
         <h3 class="feature-box-title">申請にあたっての注意事項</h3>
         <ul>
           <li>申請受付は申請順に行い、予算上限に達し次第終了します</li>
@@ -199,8 +185,18 @@ import CtaSection from '../components/CtaSection.astro';
         </ul>
       </div>
 
-      <div class="text-center mt-2xl fade-up">
-        <a href="/download/" class="btn btn--primary btn--lg">申請書類をダウンロード</a>
+      <div class="mt-2xl fade-up">
+        <div class="heading-label">提出先</div>
+        <h2 class="section-title" style="font-size:var(--text-2xl)">書類提出先・お問い合わせ先</h2>
+      </div>
+      <div class="feature-box mt-xl fade-up" style="background:#fff;border:1px solid var(--warm-200)">
+        <p style="font-size:var(--text-base);line-height:2;color:var(--color-text-secondary)">
+          〒733-0032 広島市西区東観音町1-24 P&P平和大通りビル2F<br>
+          <strong style="color:var(--navy-800);font-size:var(--text-lg)">トラック運送事業者の人材不足・物価高騰対策支援センター</strong><br>
+          TEL: <a href="tel:082-232-3380" style="color:var(--color-primary);font-weight:600;font-size:var(--text-lg)">(082)232-3380</a>
+          FAX: 082-297-7751<br>
+          受付: 9:00〜17:00（土日祝日・年末年始・お盆を除く）
+        </p>
       </div>
     </div>
   </section>

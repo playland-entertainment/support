@@ -13,61 +13,43 @@ import CtaSection from '../components/CtaSection.astro';
     <div class="container">
       <div class="hero-inner">
         <div>
-          <div class="hero-badge">
-            <span class="pulse"></span>6月1日 申請受付開始
-          </div>
-          <h1 class="hero-title">
-            トラック運送事業者の<br>
-            <span class="accent">人材不足・物価高騰対策</span><br>
-            支援補助金
-          </h1>
-          <p class="hero-lead">
-            広島県内の中小トラック運送事業者を対象に、DX推進によるシステム導入、職場環境の整備、エコタイヤの導入等を支援します。
-          </p>
-          <div class="hero-actions">
-            <a href="/support/" class="btn btn--primary btn--lg">支援内容を見る</a>
-            <a href="/application/" class="btn btn--outline btn--lg">申請方法を確認</a>
-          </div>
+<img
+            src="/title.svg"
+            alt="広島県トラック協会 人材不足・物価高騰対策支援補助金 支援金のご案内"
+            class="hero-title-img"
+            width="493"
+            height="193"
+          />
           <div class="hero-meta">
             <div class="hero-meta-item">
               <span class="hero-meta-label">受付期限</span>
               <span class="hero-meta-value">令和9年<span class="hl">1月29日</span>(金)</span>
             </div>
-            <div class="hero-meta-item">
-              <span class="hero-meta-label">最大支援額</span>
-              <span class="hero-meta-value"><span class="hl">300</span>万円</span>
+            <div class="hero-meta-group">
+              <div class="hero-meta-item">
+                <span class="hero-meta-label">最大支援額</span>
+                <span class="hero-meta-value"><span class="hl">300</span>万円</span>
+              </div>
+              <div class="hero-meta-item hero-meta-item--last">
+                <span class="hero-meta-label">補助率</span>
+                <span class="hero-meta-value">最大 <span class="hl">2/3</span></span>
+              </div>
             </div>
-            <div class="hero-meta-item">
-              <span class="hero-meta-label">補助率</span>
-              <span class="hero-meta-value">最大 <span class="hl">2/3</span></span>
-            </div>
+          </div>
+          <div class="hero-actions">
+            <a href="/support/" class="btn btn--primary btn--lg">支援内容を見る</a>
+            <a href="/application/" class="btn btn--outline btn--lg">申請方法を確認</a>
           </div>
         </div>
 
         <div class="hero-visual">
-          <div class="deadline-card">
-            <p class="deadline-label">申請受付期間</p>
-            <p class="deadline-date">令和9年 1月29日<span style="font-size:.6em;font-weight:600">(金)</span></p>
-            <p class="deadline-note">※申請順に受付、予算上限に達し次第終了</p>
-            <div class="support-amounts">
-              <div class="amount-item">
-                <p class="al">① DX推進</p>
-                <p class="av">最大300万円</p>
-              </div>
-              <div class="amount-item">
-                <p class="al">② 女性環境整備</p>
-                <p class="av">最大300万円</p>
-              </div>
-              <div class="amount-item">
-                <p class="al">③ 暑熱・寒冷対策</p>
-                <p class="av">最大50万円</p>
-              </div>
-              <div class="amount-item">
-                <p class="al">④ エコタイヤ</p>
-                <p class="av">最大60万円</p>
-              </div>
-            </div>
-          </div>
+          <img
+            src="/hero-image.svg"
+            alt="トラック運送事業者のイラスト"
+            class="hero-truck-img"
+            width="480"
+            height="364"
+          />
         </div>
       </div>
     </div>
@@ -96,10 +78,15 @@ import CtaSection from '../components/CtaSection.astro';
     </div>
   </section>
 
-  <!-- 注意バナー -->
-  <section class="section--sm" style="background:var(--warm-50)">
+  <!-- 対象者 -->
+  <section class="section" id="target">
     <div class="container">
-      <div class="notice notice--warning fade-up">
+      <div class="fade-up">
+        <div class="heading-label">対象者</div>
+        <h2 class="section-title" style="color:var(--color-primary)">広島県内に本社、支社、本店、支店又は営業所等を置く<br>中小トラック運送事業者</h2>
+        <p style="font-weight:700;color:var(--navy-900);margin-top:var(--space-md)">●一般貨物自動車運送事業及び特定貨物自動車運送事業の営業許可を受けている者で、<br class="hidden sm:inline">資本金の額又は出資の総額が3億円以下又は常時使用する従業員の数が300人以下である事業者に限ります。</p>
+      </div>
+      <div class="notice notice--warning fade-up" style="margin-top:var(--space-2xl)">
         <svg class="notice-icon" viewBox="0 0 24 24" fill="currentColor">
           <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
         </svg>
@@ -111,48 +98,22 @@ import CtaSection from '../components/CtaSection.astro';
     </div>
   </section>
 
-  <!-- 対象者 -->
-  <section class="section" id="target">
-    <div class="container">
-      <div class="fade-up">
-        <div class="heading-label">対象者</div>
-        <h2 class="section-title">広島県内の中小トラック運送事業者</h2>
-      </div>
-      <div class="feature-grid mt-2xl">
-        <div class="feature-box fade-up">
-          <h3 class="feature-box-title">基本要件</h3>
-          <ul>
-            <li>一般貨物自動車運送事業または特定貨物自動車運送事業の営業許可を受けていること</li>
-            <li>資本金の額又は出資の総額が3億円以下又は常時使用する従業員の数が300人以下である事業者に限ります</li>
-            <li>広島県内に本社・本店・本所・支所または営業所等を置いていること</li>
-          </ul>
-        </div>
-        <div class="feature-box fade-up">
-          <h3 class="feature-box-title">注意事項</h3>
-          <ul>
-            <li>令和8年4月1日以降に契約・発注したものが対象です</li>
-            <li>本事業は、国の「物価高騰対応重点支援地方創生臨時交付金」を活用した事業です</li>
-            <li>他の補助金等がある場合は控除されることがあります</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- 支援内容概要 -->
   <section class="section" id="support" style="background:var(--warm-50)">
     <div class="container">
-      <div class="text-center fade-up">
-        <div class="heading-label" style="justify-content:center">支援内容</div>
-        <h2 class="section-title">4つのカテゴリーで支援</h2>
-        <p class="section-subtitle" style="margin:0 auto">
-          人材不足・物価高騰対策として、以下の取り組みに対して支援金を交付します。
-        </p>
+      <div class="fade-up">
+        <div class="heading-label">支援内容</div>
+        <h2 class="section-title" style="color:var(--color-primary)">
+          人材不足・物価高騰対策として、<br class="hidden sm:inline">以下の取り組みに対して支援金を交付します
+        </h2>
+        <p style="font-size:var(--text-sm);color:var(--color-text-secondary);margin-top:var(--space-sm)">※令和８年４月１日以降に契約・発注したものに限ります。</p>
       </div>
-      <div class="card-grid card-grid--2 mt-2xl stagger">
+      <div class="card-grid mt-2xl stagger">
         <a href="/support/#dx" class="card fade-up">
-          <div class="card-number">①</div>
-          <h3 class="card-title">賃上げ原資の確保や生産性向上に必要なシステムの導入</h3>
+          <div class="card-header">
+            <div class="card-number">1</div>
+            <h3 class="card-title">賃上げ原資の確保や生産性向上に必要なシステムの導入</h3>
+          </div>
           <p class="card-desc">
             運賃管理・労働管理・運行管理等のDXシステム導入、デジタコ・自動運行・乗務構造可視化システム等。
           </p>
@@ -169,8 +130,10 @@ import CtaSection from '../components/CtaSection.astro';
         </a>
 
         <a href="/support/#women" class="card fade-up">
-          <div class="card-number">②</div>
-          <h3 class="card-title">女性ドライバーの働きやすさにつながる施設・設備等の整備</h3>
+          <div class="card-header">
+            <div class="card-number">2</div>
+            <h3 class="card-title">女性ドライバーの働きやすさにつながる施設・設備等の整備</h3>
+          </div>
           <p class="card-desc">
             女性用トイレ・洗衣室・休憩室・シャワー室・ロッカーの新設、改修。今後採用予定の事業者も対象。
           </p>
@@ -187,8 +150,10 @@ import CtaSection from '../components/CtaSection.astro';
         </a>
 
         <a href="/support/#heat" class="card fade-up">
-          <div class="card-number">③</div>
-          <h3 class="card-title">暑熱・寒冷対策を目的とした設備等の導入</h3>
+          <div class="card-header">
+            <div class="card-number">3</div>
+            <h3 class="card-title">暑熱・寒冷対策を目的とした設備等の導入</h3>
+          </div>
           <p class="card-desc">
             電動ファン付き作業着、ネッククーラー、スポットクーラー、ヒーター付き作業着、冷凍庫等。
           </p>
@@ -205,8 +170,10 @@ import CtaSection from '../components/CtaSection.astro';
         </a>
 
         <a href="/support/#tire" class="card fade-up">
-          <div class="card-number">④</div>
-          <h3 class="card-title">エコタイヤ・再生タイヤの導入</h3>
+          <div class="card-header">
+            <div class="card-number">4</div>
+            <h3 class="card-title">エコタイヤ・再生タイヤの導入</h3>
+          </div>
           <p class="card-desc">
             広島県トラック協会の「エコタイヤ・再生タイヤ助成対象商品一覧」に掲載されているエコタイヤまたは再生タイヤの導入経費。
           </p>
@@ -242,22 +209,25 @@ import CtaSection from '../components/CtaSection.astro';
       </div>
       <div class="steps mt-2xl stagger">
         <div class="step fade-up">
-          <div class="step-number">1</div>
+          <div class="step-number">STEP1</div>
           <h3 class="step-title">事前相談</h3>
           <p class="step-desc">支援センターに電話で申請予定額（概算）をお伝えください。残予算の目安等をご案内します。</p>
         </div>
+        <div class="step-arrow" aria-hidden="true"></div>
         <div class="step fade-up">
-          <div class="step-number">2</div>
+          <div class="step-number">STEP2</div>
           <h3 class="step-title">設備導入・整備</h3>
           <p class="step-desc">令和8年4月1日以降に対象の設備・システムを契約・発注し、導入を完了してください。</p>
         </div>
+        <div class="step-arrow" aria-hidden="true"></div>
         <div class="step fade-up">
-          <div class="step-number">3</div>
+          <div class="step-number">STEP3</div>
           <h3 class="step-title">書類作成・提出</h3>
           <p class="step-desc">必要書類を揃え、支援センターへ郵送。令和9年1月29日必着。</p>
         </div>
+        <div class="step-arrow" aria-hidden="true"></div>
         <div class="step fade-up">
-          <div class="step-number">4</div>
+          <div class="step-number">STEP4</div>
           <h3 class="step-title">審査・交付</h3>
           <p class="step-desc">申請内容を審査のうえ交付決定。口座振込にて支援金を交付します。</p>
         </div>

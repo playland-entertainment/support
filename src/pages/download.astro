@@ -15,15 +15,14 @@ import CtaSection from '../components/CtaSection.astro';
         <p class="page-hero-label">書類ダウンロード</p>
         <h1 class="page-hero-title">各種申請書類</h1>
         <p class="page-hero-lead">
-          申請するカテゴリーに応じた書類をダウンロードしてください。
-          すべての申請に「共通書類」が必要です。
+          申請するカテゴリーに応じた書類をダウンロードしてください。<br class="hidden sm:inline">すべての申請に「共通書類」が必要です。
         </p>
       </div>
     </div>
   </section>
 
   <section class="section" style="background:var(--warm-50)">
-    <div class="container container--narrow">
+    <div class="container">
 
       <div class="notice notice--info mb-2xl fade-up">
         <svg class="notice-icon" viewBox="0 0 24 24" fill="currentColor">
@@ -52,8 +51,8 @@ import CtaSection from '../components/CtaSection.astro';
               </div>
             </div>
             <div class="download-item-actions">
-              <a href="#" class="btn btn--sm btn--outline">Word</a>
-              <a href="#" class="btn btn--sm btn--ghost">PDF</a>
+              <a href="/files/application.doc" class="btn btn--sm btn--outline" target="_blank">Word</a>
+              <a href="/files/application.pdf" class="btn btn--sm btn--ghost" target="_blank">PDF</a>
             </div>
           </div>
         </div>
@@ -61,7 +60,10 @@ import CtaSection from '../components/CtaSection.astro';
 
       <!-- ① DX推進 -->
       <div class="download-group fade-up">
-        <h2 class="download-group-title">① DX推進</h2>
+        <div class="card-header">
+          <div class="card-number">1</div>
+          <h2 class="download-group-title">賃上げ原資の確保や生産性向上に必要なシステムの導入</h2>
+        </div>
         <div class="download-list">
           <div class="download-item">
             <div class="download-item-info">
@@ -76,8 +78,8 @@ import CtaSection from '../components/CtaSection.astro';
               </div>
             </div>
             <div class="download-item-actions">
-              <a href="#" class="btn btn--sm btn--outline">Word</a>
-              <a href="#" class="btn btn--sm btn--ghost">PDF</a>
+              <a href="/files/annex01.docx" class="btn btn--sm btn--outline" target="_blank">Word</a>
+              <a href="/files/annex01.pdf" class="btn btn--sm btn--ghost" target="_blank">PDF</a>
             </div>
           </div>
           <div class="download-item">
@@ -93,8 +95,8 @@ import CtaSection from '../components/CtaSection.astro';
               </div>
             </div>
             <div class="download-item-actions">
-              <a href="#" class="btn btn--sm btn--outline">Excel</a>
-              <a href="#" class="btn btn--sm btn--ghost">PDF</a>
+              <a href="/files/annex02.xlsx" class="btn btn--sm btn--outline" target="_blank">Excel</a>
+              <a href="/files/annex02.pdf" class="btn btn--sm btn--ghost" target="_blank">PDF</a>
             </div>
           </div>
           <div class="download-item">
@@ -110,8 +112,8 @@ import CtaSection from '../components/CtaSection.astro';
               </div>
             </div>
             <div class="download-item-actions">
-              <a href="#" class="btn btn--sm btn--outline">Word</a>
-              <a href="#" class="btn btn--sm btn--ghost">PDF</a>
+              <a href="/files/annex03.docx" class="btn btn--sm btn--outline" target="_blank">Word</a>
+              <a href="/files/annex03.pdf" class="btn btn--sm btn--ghost" target="_blank">PDF</a>
             </div>
           </div>
         </div>
@@ -119,7 +121,10 @@ import CtaSection from '../components/CtaSection.astro';
 
       <!-- ② 女性ドライバー環境整備 -->
       <div class="download-group fade-up">
-        <h2 class="download-group-title">② 女性ドライバー環境整備</h2>
+        <div class="card-header">
+          <div class="card-number">2</div>
+          <h2 class="download-group-title">女性ドライバーの働きやすさにつながる施設・設備等の整備</h2>
+        </div>
         <div class="download-list">
           <div class="download-item">
             <div class="download-item-info">
@@ -134,8 +139,8 @@ import CtaSection from '../components/CtaSection.astro';
               </div>
             </div>
             <div class="download-item-actions">
-              <a href="#" class="btn btn--sm btn--outline">Word</a>
-              <a href="#" class="btn btn--sm btn--ghost">PDF</a>
+              <a href="/files/annex04.docx" class="btn btn--sm btn--outline" target="_blank">Word</a>
+              <a href="/files/annex04.pdf" class="btn btn--sm btn--ghost" target="_blank">PDF</a>
             </div>
           </div>
           <div class="download-item">
@@ -151,8 +156,8 @@ import CtaSection from '../components/CtaSection.astro';
               </div>
             </div>
             <div class="download-item-actions">
-              <a href="#" class="btn btn--sm btn--outline">Excel</a>
-              <a href="#" class="btn btn--sm btn--ghost">PDF</a>
+              <a href="/files/annex05.xlsx" class="btn btn--sm btn--outline" target="_blank">Excel</a>
+              <a href="/files/annex05.pdf" class="btn btn--sm btn--ghost" target="_blank">PDF</a>
             </div>
           </div>
         </div>
@@ -160,7 +165,10 @@ import CtaSection from '../components/CtaSection.astro';
 
       <!-- ③ 暑熱・寒冷対策 -->
       <div class="download-group fade-up">
-        <h2 class="download-group-title">③ 暑熱・寒冷対策</h2>
+        <div class="card-header">
+          <div class="card-number">3</div>
+          <h2 class="download-group-title">暑熱・寒冷対策を目的とした設備等の導入</h2>
+        </div>
         <div class="download-list">
           <div class="download-item">
             <div class="download-item-info">
@@ -175,8 +183,8 @@ import CtaSection from '../components/CtaSection.astro';
               </div>
             </div>
             <div class="download-item-actions">
-              <a href="#" class="btn btn--sm btn--outline">Word</a>
-              <a href="#" class="btn btn--sm btn--ghost">PDF</a>
+              <a href="/files/annex06.docx" class="btn btn--sm btn--outline" target="_blank">Word</a>
+              <a href="/files/annex06.pdf" class="btn btn--sm btn--ghost" target="_blank">PDF</a>
             </div>
           </div>
           <div class="download-item">
@@ -192,8 +200,8 @@ import CtaSection from '../components/CtaSection.astro';
               </div>
             </div>
             <div class="download-item-actions">
-              <a href="#" class="btn btn--sm btn--outline">Excel</a>
-              <a href="#" class="btn btn--sm btn--ghost">PDF</a>
+              <a href="/files/annex07.xlsx" class="btn btn--sm btn--outline" target="_blank">Excel</a>
+              <a href="/files/annex07.pdf" class="btn btn--sm btn--ghost" target="_blank">PDF</a>
             </div>
           </div>
         </div>
@@ -201,7 +209,10 @@ import CtaSection from '../components/CtaSection.astro';
 
       <!-- ④ エコタイヤ -->
       <div class="download-group fade-up">
-        <h2 class="download-group-title">④ エコタイヤ</h2>
+        <div class="card-header">
+          <div class="card-number">4</div>
+          <h2 class="download-group-title">エコタイヤ・再生タイヤの導入</h2>
+        </div>
         <div class="download-list">
           <div class="download-item">
             <div class="download-item-info">
@@ -216,8 +227,8 @@ import CtaSection from '../components/CtaSection.astro';
               </div>
             </div>
             <div class="download-item-actions">
-              <a href="#" class="btn btn--sm btn--outline">Excel</a>
-              <a href="#" class="btn btn--sm btn--ghost">PDF</a>
+              <a href="/files/annex08.xlsx" class="btn btn--sm btn--outline" target="_blank">Excel</a>
+              <a href="/files/annex08.pdf" class="btn btn--sm btn--ghost" target="_blank">PDF</a>
             </div>
           </div>
         </div>
