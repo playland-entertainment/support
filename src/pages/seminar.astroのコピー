@@ -1,0 +1,279 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CtaSection from '../components/CtaSection.astro';
+---
+
+<Layout
+  title="セミナー案内 | トラック運送事業者の人材不足・物価高騰対策支援補助金"
+  description="物流DX推進セミナーの日程・会場・申込方法。DX推進支援を申請するには本セミナーの受講が必要です。広島県トラック協会。"
+>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner">
+        <p class="page-hero-label">セミナー案内</p>
+        <h1 class="page-hero-title">物流DX推進セミナー</h1>
+        <p class="page-hero-lead">
+          DX推進（①システム導入）の申請には、本セミナーの受講が必要です。<br class="hidden sm:inline">参加無料。令和7年度受講済みの方は不要です。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--sm" style="padding-top:var(--space-xl)">
+    <div class="container">
+      <div class="seminar-card fade-up">
+        <div class="seminar-venues">
+          <div class="venue-card">
+            <p class="venue-date">7月16日(木)</p>
+            <p class="venue-name">三次会場 ― みよしまちづくりセンター</p>
+            <p style="font-size:var(--text-xs);color:var(--color-text-secondary)">
+              三次市十日市西6-10-45 / TEL: 0824-64-0091
+            </p>
+            <p class="venue-capacity">定員 30名 ｜ 13:15〜15:30</p>
+          </div>
+          <div class="venue-card">
+            <p class="venue-date">7月23日(木)・24日(金)</p>
+            <p class="venue-name">広島会場 ― 広島県トラック総合会館 5F</p>
+            <p style="font-size:var(--text-xs);color:var(--color-text-secondary)">
+              広島市東区光町2-1-18 / TEL: 082-264-1501
+            </p>
+            <p class="venue-capacity">定員 各日60名 ｜ 13:15〜15:30</p>
+          </div>
+          <div class="venue-card">
+            <p class="venue-date">7月27日(月)</p>
+            <p class="venue-name">福山会場 ― 福山商工会議所</p>
+            <p style="font-size:var(--text-xs);color:var(--color-text-secondary)">
+              福山市西町2-10-1 / TEL: 084-921-2345
+            </p>
+            <p class="venue-capacity">定員 50名 ｜ 13:15〜15:30</p>
+          </div>
+        </div>
+
+        <p style="color:#DC2626;font-weight:700;display:flex;align-items:flex-start;gap:var(--space-sm);margin:var(--space-md) 0">
+          <svg viewBox="0 0 24 24" fill="#DC2626" style="width:20px;height:20px;flex-shrink:0;margin-top:2px">
+            <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+          </svg>
+          ① DX推進（システム導入）の支援金を申請される方は、必ずセミナーを受講してください。令和7年度受講済みの方は不要です。
+        </p>
+
+        <p style="color:var(--color-text-secondary);font-size:var(--text-sm);margin-bottom:var(--space-lg)">
+          DXの重要性を解説する講演に加え、先行企業の取組事例もご紹介。セミナー終了後には専用・デジタコ等のシステム展示やIT専門家への相談ブースも設けます。参加無料。<br>
+          ※広島会場・福山会場は参加者用駐車場なし ｜ 12:30受付開始 ｜ セミナー終了後に参加証明書を発行 ｜ 講師：近代経営システム研究所 森高 弘純 氏 他
+        </p>
+
+        <p style="color:var(--navy-800);font-size:var(--text-sm);border:2px solid var(--navy-900);border-radius:var(--radius-md);padding:var(--space-md) var(--space-lg);display:inline-block">
+          <strong style="color:var(--navy-900)">申込方法：</strong>
+          5月11日(月)から受付開始。広島県トラック協会HPの申込フォーム、またはFAX（082-297-7751）にて。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- セミナー内容 -->
+  <section class="section" style="background:var(--warm-50)">
+    <div class="container">
+      <div class="fade-up">
+        <div class="heading-label">プログラム</div>
+        <h2 class="section-title">セミナーの内容</h2>
+      </div>
+      <div class="feature-grid mt-2xl">
+        <div class="feature-box fade-up">
+          <h3 class="feature-box-title">講演内容</h3>
+          <ul>
+            <li>物流DXの重要性と業界トレンド</li>
+            <li>中小トラック事業者が取り組むべきDXとは</li>
+            <li>先行企業の取組事例紹介</li>
+            <li>本補助金の活用方法と申請ポイント</li>
+          </ul>
+        </div>
+        <div class="feature-box fade-up">
+          <h3 class="feature-box-title">セミナー終了後</h3>
+          <ul>
+            <li>デジタコ・専用システム等の展示ブース</li>
+            <li>IT専門家への個別相談ブース</li>
+            <li>参加証明書の発行（DX支援申請に必要）</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="notice notice--info mt-2xl fade-up">
+        <svg class="notice-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+        </svg>
+        <div>
+          セミナー受講後に発行される<strong>参加証明書</strong>は、DX推進（①）の申請書類として必要になりますので、大切に保管してください。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 支援交付事業者一覧 -->
+  <section class="section">
+    <div class="container">
+      <div class="fade-up">
+        <div class="heading-label">交付事業者</div>
+        <h2 class="section-title">支援交付事業者一覧</h2>
+      </div>
+
+      <div class="grantee-grid fade-up">
+
+        <div class="grantee-block">
+          <h3 class="grantee-type">単独型</h3>
+          <ul class="grantee-list">
+            <li>浅田運送株式会社</li>
+            <li>有限会社阿吹運送店</li>
+            <li>市川運送株式会社</li>
+            <li>株式会社今田運送</li>
+            <li>株式会社オージーロジテクノ</li>
+            <li>有限会社大豊商事</li>
+            <li>株式会社電通資材</li>
+            <li>株式会社福竜高速</li>
+            <li>有限会社北条産業運輸</li>
+            <li>株式会社美和建設</li>
+          </ul>
+        </div>
+
+        <div class="grantee-block">
+          <h3 class="grantee-type">複数者連携型</h3>
+          <ul class="grantee-list">
+            <li>アイオ・ティ・アンド・ピー株式会社</li>
+            <li>株式会社青空</li>
+            <li>浅田運送株式会社</li>
+            <li>株式会社ＥＮＣＡＲＧＯ</li>
+            <li>飯田運送株式会社</li>
+            <li>市川運送株式会社</li>
+            <li>株式会社いのうえ運送</li>
+            <li>有限会社井上急送</li>
+            <li>株式会社岩木開発</li>
+            <li>株式会社歌港組</li>
+            <li>有限会社英伸建設</li>
+            <li>ＳＲ物流株式会社</li>
+            <li>ＭＳロジスティックス株式会社</li>
+            <li>有限会社エンタープライズ広島</li>
+            <li>有限会社大石運送</li>
+            <li>オーケー輸送株式会社</li>
+            <li>株式会社おおした商事</li>
+            <li>大竹双葉運輸株式会社</li>
+            <li>大西運輸株式会社</li>
+            <li>株式会社おおはら</li>
+            <li>大森運送株式会社</li>
+            <li>株式会社岡明運送</li>
+            <li>株式会社オカモト</li>
+            <li>沖藤運送株式会社</li>
+            <li>株式会社カイソー</li>
+            <li>カメダライン株式会社</li>
+            <li>有限会社ガレージスリック</li>
+            <li>株式会社カワサキ運輸</li>
+            <li>幹栄建設工業株式会社</li>
+            <li>麒麟倉庫株式会社</li>
+            <li>久井運送株式会社</li>
+            <li>有限会社久保商事</li>
+            <li>熊野貨物運輸株式会社</li>
+            <li>株式会社久米組</li>
+            <li>クレコレクトサービス株式会社</li>
+            <li>ゲイソー・ロジスティクス株式会社</li>
+            <li>株式会社芸北運送</li>
+            <li>有限会社ケンキ商事</li>
+            <li>幸栄運輸株式会社</li>
+            <li>株式会社河野</li>
+            <li>呉港工業運輸株式会社</li>
+            <li>株式会社ＣｉｒｃｌｅＣｏｍｐａｃｔ</li>
+            <li>西城運輸砕石株式会社</li>
+            <li>迫田運送株式会社</li>
+            <li>佐藤重輸株式会社</li>
+            <li>山陽ロジックス株式会社</li>
+            <li>サンライズ運輸株式会社</li>
+            <li>有限会社シャルダン商会</li>
+            <li>株式会社ジョイントトランスポーター</li>
+            <li>城南運輸有限会社</li>
+            <li>城南観光有限会社</li>
+            <li>昭和運輸株式会社</li>
+            <li>昭和海運株式会社</li>
+            <li>昭和陸運株式会社</li>
+            <li>志和貨物自動車株式会社</li>
+            <li>新興運輸株式会社</li>
+            <li>新十和運輸株式会社</li>
+            <li>株式会社生興運送</li>
+            <li>西部運輸株式会社</li>
+            <li>有限会社ゼットラインロジスティック</li>
+            <li>株式会社総合配送</li>
+            <li>有限会社大成</li>
+            <li>株式会社ダイビン運送</li>
+            <li>有限会社大豊商事</li>
+            <li>有限会社大和運送</li>
+            <li>株式会社大和商会</li>
+            <li>有限会社タナカ産業</li>
+            <li>田中陸運有限会社</li>
+            <li>チトセ陸運有限会社</li>
+            <li>株式会社チューガイ</li>
+            <li>有限会社中国とまと輸送</li>
+            <li>中国陸運株式会社</li>
+            <li>株式会社中国ロジテック</li>
+            <li>津田運送株式会社</li>
+            <li>寺西運送有限会社</li>
+            <li>株式会社デリカサービス</li>
+            <li>東洋運輸株式会社</li>
+            <li>株式会社東酪</li>
+            <li>藤和産業株式会社</li>
+            <li>有限会社トーイン物流サービス</li>
+            <li>徳沢運輸株式会社</li>
+            <li>栃島運送株式会社</li>
+            <li>とまと通運株式会社</li>
+            <li>冨永運送有限会社</li>
+            <li>外山運送株式会社</li>
+            <li>豊栄運輸有限会社</li>
+            <li>ＮａｎａｓｈｉｎＰｒｏｖｉｄｅｒ株式会社</li>
+            <li>株式会社ＮＡＲＡ　ＴＲＡＮＳＰＯＲＴ</li>
+            <li>株式会社西広トランスポート</li>
+            <li>有限会社西日本通商</li>
+            <li>西本急送株式会社</li>
+            <li>株式会社ネストロジスティクス</li>
+            <li>株式会社畠山倉庫</li>
+            <li>有限会社ハヤタニ重機</li>
+            <li>有限会社原田運送</li>
+            <li>尾三物流株式会社</li>
+            <li>株式会社秀商</li>
+            <li>株式会社博志</li>
+            <li>広島資材株式会社</li>
+            <li>株式会社広島トランスポート</li>
+            <li>広鉄運輸株式会社</li>
+            <li>株式会社福栄運送</li>
+            <li>有限会社福岡運送</li>
+            <li>有限会社福松運輸</li>
+            <li>福良運輸株式会社</li>
+            <li>有限会社冨士運輸</li>
+            <li>双葉運輸株式会社</li>
+            <li>有限会社フラワー興産</li>
+            <li>フラワープロ株式会社</li>
+            <li>平成物流株式会社</li>
+            <li>豊国自動車株式会社</li>
+            <li>宝和運輸株式会社</li>
+            <li>株式会社保利通商</li>
+            <li>前表産業有限会社</li>
+            <li>増井運送有限会社</li>
+            <li>株式会社マスダ</li>
+            <li>丸一倉庫運輸株式会社</li>
+            <li>有限会社丸幸物流</li>
+            <li>丸進運油株式会社</li>
+            <li>株式会社ミカワ</li>
+            <li>有限会社光永運送</li>
+            <li>明和運送株式会社</li>
+            <li>山県運輸株式会社</li>
+            <li>有限会社ヤマス運輸</li>
+            <li>山田運輸株式会社</li>
+            <li>株式会社YAMATO</li>
+            <li>株式会社ｒｉｋｕ開業．</li>
+            <li>リジョー株式会社</li>
+            <li>リジョートランスポート株式会社</li>
+            <li>ワコー物流株式会社</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <CtaSection />
+</Layout>

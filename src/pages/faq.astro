@@ -21,22 +21,6 @@ import CtaSection from '../components/CtaSection.astro';
     </div>
   </section>
 
-  <!-- 目次 -->
-  <div class="sticky-nav">
-    <div class="container">
-      <div class="sticky-nav-inner">
-        <a href="#target" class="tag tag--orange">対象者</a>
-        <a href="#dx" class="tag tag--orange">DX推進</a>
-        <a href="#seminar" class="tag tag--orange">セミナー</a>
-        <a href="#conditions" class="tag tag--orange">申請条件</a>
-        <a href="#workplace" class="tag tag--orange">環境整備・暑熱対策</a>
-        <a href="#tire" class="tag tag--orange">エコタイヤ</a>
-        <a href="#amount" class="tag tag--orange">支援金額</a>
-        <a href="#lease" class="tag tag--orange">リース契約</a>
-        <a href="#other" class="tag tag--orange">その他</a>
-      </div>
-    </div>
-  </div>
 
   <section class="section">
     <div class="container">
@@ -47,7 +31,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q1. 営業用貨物自動車保有台数の数え方を教えてください。被牽引車は含みますか。</span>
+            <span><span class="faq-q-label">Q1.</span> 営業用貨物自動車保有台数の数え方を教えてください。被牽引車は含みますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -57,7 +41,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q2. 保有台数は、いつの時点で確認されますか。</span>
+            <span><span class="faq-q-label">Q2.</span> 保有台数は、いつの時点で確認されますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -67,7 +51,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q3. 資本金8,000万円・従業員800人・広島保有台数800台の事業者は対象になりますか。</span>
+            <span><span class="faq-q-label">Q3.</span> 資本金8,000万円・従業員800人・広島保有台数800台の事業者は対象になりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -77,7 +61,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q4. 岡山本店と広島支店など複数事業所が連携してシステムを導入する場合、複数者連携型になりますか。</span>
+            <span><span class="faq-q-label">Q4.</span> 岡山本店と広島支店など複数事業所が連携してシステムを導入する場合、複数者連携型になりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -87,7 +71,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q5. 広島県内に複数の営業所がある場合、システムを導入した営業所だけで保有台数を判定しますか。</span>
+            <span><span class="faq-q-label">Q5.</span> 広島県内に複数の営業所がある場合、システムを導入した営業所だけで保有台数を判定しますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -97,7 +81,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q6. 県外の事業所も含めて一体的にシステム導入する場合、県外分の経費も申請できますか。</span>
+            <span><span class="faq-q-label">Q6.</span> 県外の事業所も含めて一体的にシステム導入する場合、県外分の経費も申請できますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -107,7 +91,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q7. 広島県内の保有台数が51両以上の事業者ですが、グループ会社と連携してDXに取り組む場合は対象になりますか。</span>
+            <span><span class="faq-q-label">Q7.</span> 広島県内の保有台数が51両以上の事業者ですが、グループ会社と連携してDXに取り組む場合は対象になりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -118,13 +102,11 @@ import CtaSection from '../components/CtaSection.astro';
 
       <!-- DX推進について -->
       <div class="faq-section fade-up" id="dx">
-        <h2 class="faq-section-title">
-          <span class="tag tag--orange" style="font-size:var(--text-sm);margin-bottom:var(--space-md);display:inline-flex">支援内容 DX推進について</span>
-        </h2>
+        <h2 class="faq-section-title">支援内容 DX推進について</h2>
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q8. 改正物流法への対応のために導入するシステムとはどのようなものですか。</span>
+            <span><span class="faq-q-label">Q8.</span> 改正物流法への対応のために導入するシステムとはどのようなものですか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -134,7 +116,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q9. 「実運送体制管理簿の作成に必要な下請構造の可視化に必要なシステム」とはどういうものですか。</span>
+            <span><span class="faq-q-label">Q9.</span> 「実運送体制管理簿の作成に必要な下請構造の可視化に必要なシステム」とはどういうものですか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -144,7 +126,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q10. 実運送体制管理簿の可視化システムは、関わる全事業者（元・子・孫）がシステムを導入する必要がありますか。</span>
+            <span><span class="faq-q-label">Q10.</span> 実運送体制管理簿の可視化システムは、関わる全事業者（元・子・孫）がシステムを導入する必要がありますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -154,7 +136,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q11. ハードウェアは対象になりますか。サーバー用PC・モニターはどうですか。</span>
+            <span><span class="faq-q-label">Q11.</span> ハードウェアは対象になりますか。サーバー用PC・モニターはどうですか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -165,7 +147,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q12. システムは新規導入ですが、運行車載器は中古品を購入予定です。対象になりますか。</span>
+            <span><span class="faq-q-label">Q12.</span> システムは新規導入ですが、運行車載器は中古品を購入予定です。対象になりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -175,7 +157,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q13. クラウド型デジタコを導入する場合、月額の通信料はどこまで支援対象になりますか。</span>
+            <span><span class="faq-q-label">Q13.</span> クラウド型デジタコを導入する場合、月額の通信料はどこまで支援対象になりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -185,7 +167,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q14. デジタコの購入だけでも支援金の対象になりますか。</span>
+            <span><span class="faq-q-label">Q14.</span> デジタコの購入だけでも支援金の対象になりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -195,7 +177,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q15. デジタコを従来のものから最新のものに入れ替えました。支援対象になりますか。</span>
+            <span><span class="faq-q-label">Q15.</span> デジタコを従来のものから最新のものに入れ替えました。支援対象になりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -205,7 +187,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q16. ドライブレコーダーの購入は支援対象になりますか。</span>
+            <span><span class="faq-q-label">Q16.</span> ドライブレコーダーの購入は支援対象になりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -218,7 +200,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q17. アルコールチェッカーは支援対象になりますか。</span>
+            <span><span class="faq-q-label">Q17.</span> アルコールチェッカーは支援対象になりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -228,7 +210,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q18. 勤怠管理システムは支援対象になりますか。</span>
+            <span><span class="faq-q-label">Q18.</span> 勤怠管理システムは支援対象になりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -238,7 +220,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q19. 求人のためのホームページ作成は支援対象になりますか。</span>
+            <span><span class="faq-q-label">Q19.</span> 求人のためのホームページ作成は支援対象になりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -248,7 +230,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q20. 現在のシステムをクラウド版へアップグレードする場合、ソフト・ライセンス・開発費・PCは対象になりますか。</span>
+            <span><span class="faq-q-label">Q20.</span> 現在のシステムをクラウド版へアップグレードする場合、ソフト・ライセンス・開発費・PCは対象になりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -258,7 +240,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q21. 「当年度分」とはいつからいつまでですか。月額利用料の前払いはどう扱われますか。</span>
+            <span><span class="faq-q-label">Q21.</span> 「当年度分」とはいつからいつまでですか。月額利用料の前払いはどう扱われますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -268,7 +250,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q22. 月額利用料など複数年分まとめて支払っている場合、当年度分だけが対象ですか。</span>
+            <span><span class="faq-q-label">Q22.</span> 月額利用料など複数年分まとめて支払っている場合、当年度分だけが対象ですか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -278,7 +260,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q23. クラウド利用料の補助対象範囲を教えてください。他事業と共有する場合は按分できますか。</span>
+            <span><span class="faq-q-label">Q23.</span> クラウド利用料の補助対象範囲を教えてください。他事業と共有する場合は按分できますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -289,7 +271,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q24. 今まで使用していた通信料は導入経費になりますか。</span>
+            <span><span class="faq-q-label">Q24.</span> 今まで使用していた通信料は導入経費になりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -300,13 +282,11 @@ import CtaSection from '../components/CtaSection.astro';
 
       <!-- セミナーについて -->
       <div class="faq-section fade-up" id="seminar">
-        <h2 class="faq-section-title">
-          <span class="tag tag--orange" style="font-size:var(--text-sm);margin-bottom:var(--space-md);display:inline-flex">セミナーについて</span>
-        </h2>
+        <h2 class="faq-section-title">セミナーについて</h2>
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q25. セミナー受講証明書はいつもらえますか。</span>
+            <span><span class="faq-q-label">Q25.</span> セミナー受講証明書はいつもらえますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -316,7 +296,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q26. セミナーに代理参加はできますか。ディーラーが数社まとめて受講してもいいですか。</span>
+            <span><span class="faq-q-label">Q26.</span> セミナーに代理参加はできますか。ディーラーが数社まとめて受講してもいいですか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -326,7 +306,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q27. セミナーに参加できるのは代表者のみですか。</span>
+            <span><span class="faq-q-label">Q27.</span> セミナーに参加できるのは代表者のみですか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -336,7 +316,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q28. リース会社と共同申請の場合、リース会社もセミナーに参加する必要がありますか。</span>
+            <span><span class="faq-q-label">Q28.</span> リース会社と共同申請の場合、リース会社もセミナーに参加する必要がありますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -346,7 +326,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q29. 令和7年度のセミナーに参加している場合、セミナー参加の支援条件を満たしますか。</span>
+            <span><span class="faq-q-label">Q29.</span> 令和7年度のセミナーに参加している場合、セミナー参加の支援条件を満たしますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -357,13 +337,11 @@ import CtaSection from '../components/CtaSection.astro';
 
       <!-- 申請条件・手続きについて -->
       <div class="faq-section fade-up" id="conditions">
-        <h2 class="faq-section-title">
-          <span class="tag tag--orange" style="font-size:var(--text-sm);margin-bottom:var(--space-md);display:inline-flex">申請条件・手続きについて</span>
-        </h2>
+        <h2 class="faq-section-title">申請条件・手続きについて</h2>
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q30. システム導入計画書の作成方法を教えてください。</span>
+            <span><span class="faq-q-label">Q30.</span> システム導入計画書の作成方法を教えてください。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -373,7 +351,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q31. 対象となるシステムはいつ導入したものですか。令和7年3月に契約したものは対象になりますか。</span>
+            <span><span class="faq-q-label">Q31.</span> 対象となるシステムはいつ導入したものですか。令和7年3月に契約したものは対象になりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -384,7 +362,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q32. いつまでが支援金の対象になりますか。</span>
+            <span><span class="faq-q-label">Q32.</span> いつまでが支援金の対象になりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -394,7 +372,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q33. 申請に必要な「事業計画変更事前届出書の写し」ですが、変更がなく古いものしかない場合はどうすればよいですか。</span>
+            <span><span class="faq-q-label">Q33.</span> 申請に必要な「事業計画変更事前届出書の写し」ですが、変更がなく古いものしかない場合はどうすればよいですか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -404,7 +382,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q34. フォローアップ調査とはどのようなものですか。</span>
+            <span><span class="faq-q-label">Q34.</span> フォローアップ調査とはどのようなものですか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -414,7 +392,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q35. 支援対象事業の実績としてどのような内容が公開されますか。</span>
+            <span><span class="faq-q-label">Q35.</span> 支援対象事業の実績としてどのような内容が公開されますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -424,7 +402,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q36. 支援金交付申請書兼誓約書の判子は実印が必要ですか。</span>
+            <span><span class="faq-q-label">Q36.</span> 支援金交付申請書兼誓約書の判子は実印が必要ですか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -434,7 +412,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q37. 年度内に何回でも申請できますか。</span>
+            <span><span class="faq-q-label">Q37.</span> 年度内に何回でも申請できますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -445,13 +423,11 @@ import CtaSection from '../components/CtaSection.astro';
 
       <!-- 働きやすい環境整備・暑熱寒冷対策について -->
       <div class="faq-section fade-up" id="workplace">
-        <h2 class="faq-section-title">
-          <span class="tag tag--orange" style="font-size:var(--text-sm);margin-bottom:var(--space-md);display:inline-flex">働きやすい環境整備・暑熱寒冷対策について</span>
-        </h2>
+        <h2 class="faq-section-title">働きやすい環境整備・暑熱寒冷対策について</h2>
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q38. 女性用トイレを新設する際に、老朽化した男性用トイレもあわせて改修する場合は対象になりますか。</span>
+            <span><span class="faq-q-label">Q38.</span> 女性用トイレを新設する際に、老朽化した男性用トイレもあわせて改修する場合は対象になりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -461,7 +437,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q39. 暑熱・寒冷対策の経費について、飲食料品は箱単位で大量購入した場合でも対象になりませんか。</span>
+            <span><span class="faq-q-label">Q39.</span> 暑熱・寒冷対策の経費について、飲食料品は箱単位で大量購入した場合でも対象になりませんか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -471,7 +447,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q40. 暑熱対策パックの中にペットボトルや塩飴が含まれている場合はどうなりますか。</span>
+            <span><span class="faq-q-label">Q40.</span> 暑熱対策パックの中にペットボトルや塩飴が含まれている場合はどうなりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -481,7 +457,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q41. 単価が千円（税抜）以上とのことですが、千円相当の冷却タオルが2枚セットの場合は対象になりますか。</span>
+            <span><span class="faq-q-label">Q41.</span> 単価が千円（税抜）以上とのことですが、千円相当の冷却タオルが2枚セットの場合は対象になりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -492,13 +468,11 @@ import CtaSection from '../components/CtaSection.astro';
 
       <!-- エコタイヤ・再生タイヤについて -->
       <div class="faq-section fade-up" id="tire">
-        <h2 class="faq-section-title">
-          <span class="tag tag--orange" style="font-size:var(--text-sm);margin-bottom:var(--space-md);display:inline-flex">エコタイヤ・再生タイヤについて</span>
-        </h2>
+        <h2 class="faq-section-title">エコタイヤ・再生タイヤについて</h2>
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q42. エコタイヤ・再生タイヤの支援金と、広島県トラック協会の助成金の重複申請はできますか。</span>
+            <span><span class="faq-q-label">Q42.</span> エコタイヤ・再生タイヤの支援金と、広島県トラック協会の助成金の重複申請はできますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -508,7 +482,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q43. 霊柩車へエコタイヤを導入する場合はどうすればよいですか。</span>
+            <span><span class="faq-q-label">Q43.</span> 霊柩車へエコタイヤを導入する場合はどうすればよいですか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -519,13 +493,11 @@ import CtaSection from '../components/CtaSection.astro';
 
       <!-- 支援金額について -->
       <div class="faq-section fade-up" id="amount">
-        <h2 class="faq-section-title">
-          <span class="tag tag--orange" style="font-size:var(--text-sm);margin-bottom:var(--space-md);display:inline-flex">支援金額について</span>
-        </h2>
+        <h2 class="faq-section-title">支援金額について</h2>
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q44. 導入したシステムについて他の補助金を受け取っている場合、支援金額はどうなりますか。</span>
+            <span><span class="faq-q-label">Q44.</span> 導入したシステムについて他の補助金を受け取っている場合、支援金額はどうなりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -535,7 +507,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q45. 複数者連携型と単独型の両方に申請した場合の支援金額の算定方法を教えてください。</span>
+            <span><span class="faq-q-label">Q45.</span> 複数者連携型と単独型の両方に申請した場合の支援金額の算定方法を教えてください。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -545,7 +517,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q46. 複数のシステムを同時に導入する場合、補助額はどのように計算しますか。</span>
+            <span><span class="faq-q-label">Q46.</span> 複数のシステムを同時に導入する場合、補助額はどのように計算しますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -556,13 +528,11 @@ import CtaSection from '../components/CtaSection.astro';
 
       <!-- リース契約について -->
       <div class="faq-section fade-up" id="lease">
-        <h2 class="faq-section-title">
-          <span class="tag tag--orange" style="font-size:var(--text-sm);margin-bottom:var(--space-md);display:inline-flex">リース契約について</span>
-        </h2>
+        <h2 class="faq-section-title">リース契約について</h2>
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q47. リース契約でシステムを導入する場合、申請はできますか。</span>
+            <span><span class="faq-q-label">Q47.</span> リース契約でシステムを導入する場合、申請はできますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -573,7 +543,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q48. リース事業者と共同申請する場合・しない場合の対象経費の考え方を教えてください。</span>
+            <span><span class="faq-q-label">Q48.</span> リース事業者と共同申請する場合・しない場合の対象経費の考え方を教えてください。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -584,7 +554,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q49. リース事業者と共同申請する場合、支援金の支払先をトラック運送事業者にすることはできますか。</span>
+            <span><span class="faq-q-label">Q49.</span> リース事業者と共同申請する場合、支援金の支払先をトラック運送事業者にすることはできますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -594,7 +564,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q50. リース事業者と共同申請する場合、申請時に注意すべき事項はありますか。</span>
+            <span><span class="faq-q-label">Q50.</span> リース事業者と共同申請する場合、申請時に注意すべき事項はありますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -610,7 +580,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q51. リース契約にプロバイダー契約など数年分が含まれている場合、導入経費はどうなりますか。</span>
+            <span><span class="faq-q-label">Q51.</span> リース契約にプロバイダー契約など数年分が含まれている場合、導入経費はどうなりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -621,13 +591,11 @@ import CtaSection from '../components/CtaSection.astro';
 
       <!-- その他 -->
       <div class="faq-section fade-up" id="other">
-        <h2 class="faq-section-title">
-          <span class="tag tag--orange" style="font-size:var(--text-sm);margin-bottom:var(--space-md);display:inline-flex">その他</span>
-        </h2>
+        <h2 class="faq-section-title">その他</h2>
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q52. 複数者連携型で申請の場合、添付書類は代表事業者分だけでよいですか。</span>
+            <span><span class="faq-q-label">Q52.</span> 複数者連携型で申請の場合、添付書類は代表事業者分だけでよいですか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -637,7 +605,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q53. 複数者連携型で申請の場合、代表事業者はどの事業者がなればよいですか。</span>
+            <span><span class="faq-q-label">Q53.</span> 複数者連携型で申請の場合、代表事業者はどの事業者がなればよいですか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -647,7 +615,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q54. 導入したシステムを使用しなくなった場合はどうすればよいですか。</span>
+            <span><span class="faq-q-label">Q54.</span> 導入したシステムを使用しなくなった場合はどうすればよいですか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -658,7 +626,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q55. 自社とベンダーで開発したシステムを他社にも販売したいのですが、申請上問題はありますか。</span>
+            <span><span class="faq-q-label">Q55.</span> 自社とベンダーで開発したシステムを他社にも販売したいのですが、申請上問題はありますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -668,7 +636,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q56. 割賦契約の場合の申請者は誰になりますか。</span>
+            <span><span class="faq-q-label">Q56.</span> 割賦契約の場合の申請者は誰になりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -678,7 +646,7 @@ import CtaSection from '../components/CtaSection.astro';
 
         <div class="accordion-item">
           <button class="accordion-trigger">
-            <span>Q57. 今回の支援金は圧縮記帳の適用対象となりますか。</span>
+            <span><span class="faq-q-label">Q57.</span> 今回の支援金は圧縮記帳の適用対象となりますか。</span>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="accordion-content"><div class="accordion-content-inner">
@@ -686,15 +654,6 @@ import CtaSection from '../components/CtaSection.astro';
           </div></div>
         </div>
 
-      </div>
-
-      <div class="notice notice--info fade-up mt-2xl">
-        <svg class="notice-icon" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
-        </svg>
-        <div>
-          上記に記載のない質問やご不明な点は、<strong>支援センター（(082)232-3380）</strong>までお電話ください。受付時間：9:00〜17:00（土日祝日・年末年始・お盆を除く）
-        </div>
       </div>
 
     </div>
@@ -711,11 +670,5 @@ import CtaSection from '../components/CtaSection.astro';
   font-size: var(--text-xl);
   font-weight: 700;
   margin-bottom: var(--space-lg);
-  padding-bottom: var(--space-sm);
-  border-bottom: 2px solid var(--warm-200);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--space-sm);
 }
 </style>

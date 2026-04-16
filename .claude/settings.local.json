@@ -7,7 +7,10 @@
       "WebFetch(domain:www.torakyo-hiroshima.or.jp)",
       "Bash(curl -s \"https://www.torakyo-hiroshima.or.jp/support/assets/images/hero-image.svg\" -o /Users/kazuki_matsumori/Documents/GitHub/support/public/hero-image.svg)",
       "Bash(curl -s \"https://www.torakyo-hiroshima.or.jp/support/assets/images/body-text.svg\" -o /Users/kazuki_matsumori/Documents/GitHub/support/public/body-text.svg)",
-      "Bash(python3 -c ':*)"
+      "Bash(python3 -c ':*)",
+      "Bash(perl -i -pe 's|\\(<span>\\)\\(Q\\\\d+\\\\.\\)\\(\\\\s\\)|$1<span class=\"faq-q-label\">$2<\\\\/span>$3|g' /Users/kazuki_matsumori/Documents/GitHub/support/src/pages/faq.astro)",
+      "Bash(perl -i -pe 's|<h2 class=\"faq-section-title\">\\\\s*\\\\n\\\\s*<span class=\"tag tag--orange\"[^>]*>\\([^<]+\\)<\\\\/span>\\\\s*\\\\n\\\\s*<\\\\/h2>|<h2 class=\"faq-section-title\">$1<\\\\/h2>|g' /Users/kazuki_matsumori/Documents/GitHub/support/src/pages/faq.astro)",
+      "Bash(perl -0 -i -pe 's|<h2 class=\"faq-section-title\">\\\\s*<span class=\"tag tag--orange\"[^>]*>\\([^<]+\\)<\\\\/span>\\\\s*<\\\\/h2>|<h2 class=\"faq-section-title\">$1<\\\\/h2>|gs' /Users/kazuki_matsumori/Documents/GitHub/support/src/pages/faq.astro)"
     ]
   }
 }
