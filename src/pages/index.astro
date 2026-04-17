@@ -263,3 +263,70 @@ import CtaSection from '../components/CtaSection.astro';
 
   <CtaSection />
 </Layout>
+
+<!-- フローティングバナー（トップページのみ） -->
+<div id="floating-banner" style="
+  position:fixed;
+  bottom:24px;
+  right:24px;
+  z-index:1000;
+  opacity:0;
+  transform:translateY(16px);
+  transition:opacity .6s ease, transform .6s ease;
+  pointer-events:none;
+">
+  <div style="position:relative;display:inline-block;">
+    <a href={`${import.meta.env.BASE_URL}/files/dx.pdf`} target="_blank" rel="noopener noreferrer" style="display:block;line-height:0;">
+      <img
+        src={`${import.meta.env.BASE_URL}/bnr_dx.png`}
+        alt="デジタル導入のご相談はこちら"
+        width="240"
+        class="floating-banner-img"
+        style="display:block;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.2);"
+      />
+    </a>
+    <button
+      id="floating-banner-close"
+      aria-label="バナーを閉じる"
+      style="
+        position:absolute;
+        top:-12px;
+        right:-12px;
+        background:none;
+        border:none;
+        padding:0;
+        cursor:pointer;
+        line-height:0;
+      "
+    >
+      <img src={`${import.meta.env.BASE_URL}/icon_close.svg`} alt="閉じる" width="36" height="36" />
+    </button>
+  </div>
+</div>
+
+<style>
+  .floating-banner-img { width: 200px; transition: opacity .2s ease; }
+  .floating-banner-img:hover { opacity: .8; }
+  @media (min-width: 768px) { .floating-banner-img { width: 300px; } }
+</style>
+
+<script>
+  (function () {
+    const banner = document.getElementById('floating-banner');
+    const closeBtn = document.getElementById('floating-banner-close');
+    if (!banner || !closeBtn) return;
+
+    // ヒーローアニメーション完了後（約2秒）にふわっと表示
+    setTimeout(function () {
+      banner.style.opacity = '1';
+      banner.style.transform = 'translateY(0)';
+      banner.style.pointerEvents = 'auto';
+    }, 2000);
+
+    closeBtn.addEventListener('click', function () {
+      banner.style.opacity = '0';
+      banner.style.transform = 'translateY(16px)';
+      banner.style.pointerEvents = 'none';
+    });
+  })();
+</script>
