@@ -14,7 +14,7 @@ import CtaSection from '../components/CtaSection.astro';
       <div class="hero-inner">
         <div>
 <img
-            src="/title.svg"
+            src={`${import.meta.env.BASE_URL}//title.svg`}
             alt="広島県トラック協会 人材不足・物価高騰対策支援補助金 支援金のご案内"
             class="hero-title-img hero-fade hero-fade--1"
             width="493"
@@ -37,14 +37,14 @@ import CtaSection from '../components/CtaSection.astro';
             </div>
           </div>
           <div class="hero-actions hero-fade hero-fade--3">
-            <a href="/support/" class="btn btn--primary btn--lg">支援内容を見る</a>
-            <a href="/application/" class="btn btn--outline btn--lg">申請方法を確認</a>
+            <a href={`${import.meta.env.BASE_URL}/details/`} class="btn btn--primary btn--lg">支援内容を見る</a>
+            <a href={`${import.meta.env.BASE_URL}/application/`} class="btn btn--outline btn--lg">申請方法を確認</a>
           </div>
         </div>
 
         <div class="hero-visual hero-fade hero-fade--4">
           <img
-            src="/hero-image.svg"
+            src={`${import.meta.env.BASE_URL}//hero-image.svg`}
             alt="トラック運送事業者のイラスト"
             class="hero-truck-img"
             width="480"
@@ -67,14 +67,14 @@ import CtaSection from '../components/CtaSection.astro';
           </li>
           <li class="info-item">
             <time class="info-date" datetime="2026-04-20">2026.4.20</time>
-            <a href="/seminar/" class="info-link">
+            <a href={`${import.meta.env.BASE_URL}/seminar/`} class="info-link">
               物流DX推進セミナーのご案内（支援金申請にはこのセミナーの受講が必要です。）
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
           </li>
           <li class="info-item">
             <time class="info-date" datetime="2026-04-20">2026.4.20</time>
-            <a href="/grantees/" class="info-link">
+            <a href={`${import.meta.env.BASE_URL}/grantees/`} class="info-link">
               令和７年度トラック運送事業者の人手不足対策加速事業支援金交付対象事業者を公開しました
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
@@ -115,7 +115,7 @@ import CtaSection from '../components/CtaSection.astro';
         <p style="font-size:var(--text-sm);color:var(--color-text-secondary);margin-top:var(--space-sm)">※令和８年４月１日以降に契約・発注したものに限ります。</p>
       </div>
       <div class="card-grid mt-2xl stagger">
-        <a href="/support/#dx" class="card fade-up">
+        <a href={`${import.meta.env.BASE_URL}/details/#dx`} class="card fade-up">
           <div class="card-header">
             <div class="card-number">1</div>
             <h3 class="card-title">賃上げ原資の確保や生産性向上に必要なシステムの導入</h3>
@@ -144,7 +144,7 @@ import CtaSection from '../components/CtaSection.astro';
           </span>
         </a>
 
-        <a href="/support/#women" class="card fade-up">
+        <a href={`${import.meta.env.BASE_URL}/details/#women`} class="card fade-up">
           <div class="card-header">
             <div class="card-number">2</div>
             <h3 class="card-title">女性ドライバーの働きやすさにつながる施設・設備等の整備</h3>
@@ -165,7 +165,7 @@ import CtaSection from '../components/CtaSection.astro';
           </span>
         </a>
 
-        <a href="/support/#heat" class="card fade-up">
+        <a href={`${import.meta.env.BASE_URL}/details/#heat`} class="card fade-up">
           <div class="card-header">
             <div class="card-number">3</div>
             <h3 class="card-title">暑熱・寒冷対策を目的とした設備等の導入</h3>
@@ -186,7 +186,7 @@ import CtaSection from '../components/CtaSection.astro';
           </span>
         </a>
 
-        <a href="/support/#tire" class="card fade-up">
+        <a href={`${import.meta.env.BASE_URL}/details/#tire`} class="card fade-up">
           <div class="card-header">
             <div class="card-number">4</div>
             <h3 class="card-title">エコタイヤ・再生タイヤの導入</h3>
@@ -217,7 +217,7 @@ import CtaSection from '../components/CtaSection.astro';
       </div>
 
       <div class="text-center mt-2xl fade-up">
-        <a href="/support/" class="btn btn--primary btn--lg">支援内容の詳細を見る</a>
+        <a href={`${import.meta.env.BASE_URL}/details/`} class="btn btn--primary btn--lg">支援内容の詳細を見る</a>
       </div>
     </div>
   </section>
@@ -256,7 +256,7 @@ import CtaSection from '../components/CtaSection.astro';
         </div>
       </div>
       <div class="text-center mt-2xl fade-up">
-        <a href="/application/" class="btn btn--outline btn--lg">申請方法の詳細を見る</a>
+        <a href={`${import.meta.env.BASE_URL}/application/`} class="btn btn--outline btn--lg">申請方法の詳細を見る</a>
       </div>
     </div>
   </section>
