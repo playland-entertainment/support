@@ -238,6 +238,16 @@ h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);font-weight:700;line-height:va
 .venue-date{font-family:var(--font-heading);font-size:var(--text-xl);font-weight:700;margin-bottom:var(--space-sm);color:var(--navy-900)}
 .venue-name{font-size:var(--text-sm);color:var(--navy-700);margin-bottom:var(--space-xs)}
 .venue-capacity{font-size:var(--text-xs);color:var(--color-primary);font-weight:600}
+.seminar-apply{display:grid;gap:var(--space-md);align-items:start;margin-top:var(--space-md)}
+.seminar-apply-left{display:flex;flex-direction:column;gap:var(--space-xs)}
+.seminar-apply-btn{width:100%;max-width:320px}
+.seminar-apply-fax{color:var(--color-primary);font-weight:700;display:flex;align-items:flex-start;gap:var(--space-sm);margin:0}
+.seminar-apply-fax-icon{width:20px;height:20px;flex-shrink:0;margin-top:2px}
+.seminar-apply-qr{display:flex;align-items:center;gap:var(--space-md)}
+.seminar-apply-qr-img{width:108px;height:108px;border-radius:10px;border:1px solid var(--warm-200);background:#fff}
+.seminar-apply-qr-text{font-size:var(--text-xs);color:var(--color-text-secondary);line-height:1.5;margin:0}
+@media(min-width:640px){.seminar-apply{grid-template-columns:auto auto;justify-content:start;column-gap:var(--space-lg);align-items:center}.seminar-apply-left{align-self:center}}
+@media(max-width:639px){.seminar-apply-qr{display:none}}
 
 /* Grantee List */
 .grantee-grid{display:flex;flex-direction:column;gap:var(--space-2xl);margin-top:var(--space-2xl)}
@@ -251,7 +261,7 @@ h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);font-weight:700;line-height:va
 .cta-section{background:var(--color-primary-light);border-top:3px solid var(--color-primary)}
 .cta-inner{text-align:center;max-width:640px;margin:0 auto}
 .cta-tel{display:flex;align-items:center;justify-content:center;gap:var(--space-md);margin:var(--space-xl) 0 0}
-.cta-tel-number{font-family:var(--font-heading);font-size:var(--text-3xl);font-weight:900;color:var(--navy-900)}
+.cta-tel-number{font-family:var(--font-heading);font-size:var(--text-3xl);font-weight:900;color:var(--color-primary)}
 .cta-tel-hours{font-size:var(--text-sm);color:var(--color-text-secondary);margin-top:var(--space-xs)}
 @media(max-width:639px){
   .cta-section .section-title{font-size:1.4rem}

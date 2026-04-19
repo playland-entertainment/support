@@ -63,10 +63,48 @@ import CtaSection from '../components/CtaSection.astro';
           ※広島会場・福山会場は参加者用駐車場なし ｜ 12:30受付開始 ｜ セミナー終了後に参加証明書を発行 ｜ 講師：近代経営システム研究所 森高 弘純 氏 他
         </p>
 
-        <p style="color:var(--navy-800);font-size:var(--text-sm);border:2px solid var(--navy-900);border-radius:var(--radius-md);padding:var(--space-md) var(--space-lg);display:inline-block">
-          <strong style="color:var(--navy-900)">申込方法：</strong>
-          5月11日(月)から受付開始。広島県トラック協会HPの申込フォーム、またはFAX（082-297-7751）にて。
-        </p>
+        <div
+          style="color:var(--navy-800);font-size:var(--text-sm);border:2px solid var(--color-primary);border-radius:var(--radius-md);padding:var(--space-md) var(--space-lg)"
+        >
+          <p style="margin:0 0 var(--space-sm);color:var(--navy-900);font-weight:700">
+            申込方法：
+          </p>
+          <p style="margin:0;color:var(--color-text-secondary)">
+            5月11日(月)から受付開始。セミナー申し込みフォーム、またはFAXにてお申し込みください。
+          </p>
+
+          <div class="seminar-apply">
+            <div class="seminar-apply-left">
+              <a
+                class="btn btn--primary seminar-apply-btn"
+                href="https://forms.gle/fdD9ghVTmzs9Bmst9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                セミナー申し込みフォーム
+              </a>
+
+              <p class="seminar-apply-fax">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="seminar-apply-fax-icon">
+                  <path d="M19 7H5a3 3 0 0 0-3 3v6h4v4h12v-4h4v-6a3 3 0 0 0-3-3Zm-3 11H8v-5h8v5Zm3-7H5v-1a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v1ZM17 3H7v3h10V3Z"/>
+                </svg>
+                FAXの申し込みはこちら：082-297-7751
+              </p>
+            </div>
+
+            <div class="seminar-apply-qr">
+              <img
+                src={`${import.meta.env.BASE_URL}/qr.jpg`}
+                alt="セミナー申し込みフォームQRコード"
+                class="seminar-apply-qr-img"
+                loading="lazy"
+              />
+              <p class="seminar-apply-qr-text">
+                スマホで読み取って<br />お申し込みできます
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

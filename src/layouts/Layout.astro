@@ -12,6 +12,8 @@ const {
   title,
   description = '広島県内の中小トラック運送事業者を対象に、DX推進・職場環境整備・エンタイヤ導入等を支援。最大300万円。令和9年1月29日まで受付。'
 } = Astro.props;
+
+const ogpImage = 'https://www.torakyo-hiroshima.or.jp/support/ogp.png';
 ---
 
 <!doctype html>
@@ -21,6 +23,22 @@ const {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
   <meta name="description" content={description}>
+
+  <!-- OGP / SNS -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:image" content={ogpImage}>
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={ogpImage}>
+
   <link rel="icon" href={`${import.meta.env.BASE_URL}/favicon.svg`}>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
