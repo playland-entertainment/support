@@ -10,17 +10,17 @@ const isActive = (path: string) => {
 <header class="site-header">
   <div class="header-inner">
     <a href={`${import.meta.env.BASE_URL}`} class="header-logo">
-      <img src={`${import.meta.env.BASE_URL}//logo.svg`} alt="広島県トラック協会 人材不足・物価高騰対策支援補助金" class="header-logo-img" width="auto" height="52" />
+      <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="広島県トラック協会 人材不足・物価高騰対策支援補助金" class="header-logo-img" width="auto" height="52" />
     </a>
 
     <nav class="header-nav">
       <ul>
         <li><a href={`${import.meta.env.BASE_URL}`} class:list={[{ active: isActive('/') }]}>ホーム</a></li>
-        <li><a href={`${import.meta.env.BASE_URL}/details/`} class:list={[{ active: isActive('/details') }]}>支援内容</a></li>
-        <li><a href={`${import.meta.env.BASE_URL}/application/`} class:list={[{ active: isActive('/application') }]}>申請方法</a></li>
-        <li><a href={`${import.meta.env.BASE_URL}/download/`} class:list={[{ active: isActive('/download') }]}>書類ダウンロード</a></li>
-        <li><a href={`${import.meta.env.BASE_URL}/seminar/`} class:list={[{ active: isActive('/seminar') }]}>セミナー案内</a></li>
-        <li><a href={`${import.meta.env.BASE_URL}/faq/`} class:list={[{ active: isActive('/faq') }]}>よくある質問</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}details/`} class:list={[{ active: isActive('/details') }]}>支援内容</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}application/`} class:list={[{ active: isActive('/application') }]}>申請方法</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}download/`} class:list={[{ active: isActive('/download') }]}>書類ダウンロード</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}seminar/`} class:list={[{ active: isActive('/seminar') }]}>セミナー案内</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}faq/`} class:list={[{ active: isActive('/faq') }]}>よくある質問</a></li>
       </ul>
     </nav>
 
@@ -34,10 +34,10 @@ const isActive = (path: string) => {
 <nav class="mobile-nav">
   <ul>
     <li><a href={`${import.meta.env.BASE_URL}`} class:list={[{ active: isActive('/') }]}>ホーム</a></li>
-    <li><a href={`${import.meta.env.BASE_URL}/details/`} class:list={[{ active: isActive('/details') }]}>支援内容</a></li>
-    <li><a href={`${import.meta.env.BASE_URL}/application/`} class:list={[{ active: isActive('/application') }]}>申請方法</a></li>
-    <li><a href={`${import.meta.env.BASE_URL}/download/`} class:list={[{ active: isActive('/download') }]}>書類ダウンロード</a></li>
-    <li><a href={`${import.meta.env.BASE_URL}/seminar/`} class:list={[{ active: isActive('/seminar') }]}>セミナー案内</a></li>
-    <li><a href={`${import.meta.env.BASE_URL}/faq/`} class:list={[{ active: isActive('/faq') }]}>よくある質問</a></li>
+    <li><a href={`${import.meta.env.BASE_URL}details/`} class:list={[{ active: isActive('/details') }]}>支援内容</a></li>
+    <li><a href={`${import.meta.env.BASE_URL}application/`} class:list={[{ active: isActive('/application') }]}>申請方法</a></li>
+    <li><a href={`${import.meta.env.BASE_URL}download/`} class:list={[{ active: isActive('/download') }]}>書類ダウンロード</a></li>
+    <li><a href={`${import.meta.env.BASE_URL}seminar/`} class:list={[{ active: isActive('/seminar') }]}>セミナー案内</a></li>
+    <li><a href={`${import.meta.env.BASE_URL}faq/`} class:list={[{ active: isActive('/faq') }]}>よくある質問</a></li>
   </ul>
 </nav>

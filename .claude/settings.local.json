@@ -13,7 +13,9 @@
       "Bash(perl -0 -i -pe 's|<h2 class=\"faq-section-title\">\\\\s*<span class=\"tag tag--orange\"[^>]*>\\([^<]+\\)<\\\\/span>\\\\s*<\\\\/h2>|<h2 class=\"faq-section-title\">$1<\\\\/h2>|gs' /Users/kazuki_matsumori/Documents/GitHub/support/src/pages/faq.astro)",
       "WebFetch(domain:ppad.co.jp)",
       "Bash(find /Users/kazuki_matsumori/Documents/GitHub/support/src -name \"*.astro\" -exec perl -pi -e 's|href=\"/\\(\\(?!http|mailto|tel\\)[^\"]*?\\)\"|href={`\\\\${import.meta.env.BASE_URL}$1`}|g' {} \\\\;)",
-      "Bash(python3)"
+      "Bash(python3)",
+      "Bash(node postbuild.mjs --dry)",
+      "Bash(npx astro *)"
     ]
   }
 }
