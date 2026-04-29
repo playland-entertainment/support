@@ -350,6 +350,29 @@ h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);font-weight:700;line-height:va
 .stagger>.fade-up:nth-child(3){transition-delay:160ms}
 .stagger>.fade-up:nth-child(4){transition-delay:240ms}
 
+/* Seminar Products */
+.seminar-products-nav{display:flex;flex-wrap:wrap;gap:var(--space-sm);margin-top:var(--space-xl)}
+.seminar-products-nav-item{display:inline-flex;align-items:center;gap:5px;padding:6px 14px;background:var(--warm-50);border:1px solid var(--warm-200);border-radius:var(--radius-full);font-size:var(--text-sm);font-weight:600;color:var(--color-primary);text-decoration:none;transition:all var(--transition-fast)}
+.seminar-products-nav-item:hover{background:var(--orange-100);border-color:var(--orange-300)}
+.seminar-products-nav-item svg{width:14px;height:14px;flex-shrink:0}
+.seminar-company-list{display:flex;flex-direction:column;gap:var(--space-2xl);margin-top:var(--space-2xl)}
+.seminar-company{background:#fff;border:1px solid var(--warm-200);border-radius:var(--radius-lg);padding:var(--space-2xl);overflow:hidden}
+.seminar-company-header{display:flex;gap:var(--space-2xl);align-items:flex-start;margin-bottom:var(--space-lg)}
+.seminar-company-meta{flex:1;min-width:0}
+.seminar-company-name{font-size:var(--text-2xl);font-weight:900;margin-bottom:4px}
+.seminar-company-url{font-size:var(--text-sm);color:var(--color-primary);text-decoration:underline;text-underline-offset:2px}
+.seminar-company-url:hover{color:var(--color-primary-hover)}
+.seminar-company-desc{font-size:var(--text-sm);color:var(--color-text-secondary);line-height:var(--leading-relaxed)}
+.seminar-company-img{width:220px;flex-shrink:0;border-radius:var(--radius-md);border:1px solid var(--warm-200);object-fit:cover}
+.seminar-product-group{margin-top:var(--space-xl)}
+.seminar-product-group+.seminar-product-group{margin-top:var(--space-lg)}
+.seminar-product-category{font-size:var(--text-sm);font-weight:700;color:var(--navy-800);border-left:4px solid var(--color-primary);padding-left:var(--space-sm);margin-bottom:var(--space-md);line-height:var(--leading-normal)}
+.seminar-product-name{font-size:var(--text-xl);font-weight:700;color:var(--color-primary);margin-bottom:var(--space-sm)}
+.seminar-product-list{display:flex;flex-direction:column;gap:var(--space-xs)}
+.seminar-product-list li{position:relative;padding-left:calc(6px + var(--space-sm));font-size:var(--text-sm);color:var(--color-text-secondary);line-height:var(--leading-relaxed)}
+.seminar-product-list li::before{content:'';position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--color-primary);border-radius:50%}
+@media(max-width:767px){.seminar-company{padding:var(--space-lg)}.seminar-company-img{display:none}.seminar-company-header{flex-direction:column}}
+
 /* Utilities */
 .text-center{text-align:center}
 @media(min-width:640px){.sm\:hidden{display:none}}
