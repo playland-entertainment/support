@@ -133,6 +133,10 @@ import CtaSection from '../components/CtaSection.astro';
 
       <!-- 企業ナビゲーション -->
       <nav class="seminar-products-nav fade-up">
+        <a href="#company-tumix" class="seminar-products-nav-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"/></svg>
+          株式会社TUMIX
+        </a>
         <a href="#company-np" class="seminar-products-nav-item">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"/></svg>
           株式会社 NPシステム開発
@@ -148,6 +152,10 @@ import CtaSection from '../components/CtaSection.astro';
         <a href="#company-melco" class="seminar-products-nav-item">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"/></svg>
           メルコモビリティーソリューションズ株式会社
+        </a>
+        <a href="#company-toukei" class="seminar-products-nav-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"/></svg>
+          株式会社東計電算
         </a>
         <a href="#company-navassist" class="seminar-products-nav-item">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"/></svg>
@@ -168,6 +176,42 @@ import CtaSection from '../components/CtaSection.astro';
       </nav>
 
       <div class="seminar-company-list">
+
+        <!-- 株式会社TUMIX -->
+        <div class="seminar-company fade-up" id="company-tumix">
+          <div class="seminar-company-header">
+            <div class="seminar-company-meta">
+              <img src={`${import.meta.env.BASE_URL}logo_tumix.png`} alt="TUMIX ロゴ" style="height:32px;width:auto;object-fit:contain;margin-bottom:var(--space-sm);display:block" />
+              <h3 class="seminar-company-name">株式会社TUMIX</h3>
+              <a href="https://tumix.co.jp/" class="seminar-company-url" target="_blank" rel="noopener noreferrer">https://tumix.co.jp/</a>
+              <p class="seminar-company-desc" style="margin-top:var(--space-md)">
+                株式会社TUMIXは実運送会社である「鈴与」のグループ企業です。グループ自車の運行や管理手法の改善ノウハウをシステム化し、それを同業界の皆様にご提供致します。また、クラウドサービスのメリットを最大活用し、多くのお客様の声を元に開発した新機能を毎月追加リリースしています（勿論、ご利用料金はそのまま）。TUMIXシリーズは、皆様の知恵によって進化し続ける仕組みです。500社30,000人超にご利用頂いている業界屈指のサービスです。
+              </p>
+            </div>
+            <img src={`${import.meta.env.BASE_URL}img_tumix.png`} alt="TUMIX 製品画像" class="seminar-company-img" />
+          </div>
+          <div class="seminar-product-group">
+            <p class="seminar-product-category">運送業務に係るデータを可視化して荷主等との交渉や経営改善を行うために必要なシステム</p>
+            <p class="seminar-product-name">TUMIXコンプラ</p>
+            <ul class="seminar-product-list">
+              <li>運送業専用の勤怠労務管理ツール</li>
+              <li>お手持ちのデジタコ、点呼と連動して勤怠労務管理の手入力レスを実現</li>
+              <li>残業時間、拘束時間、改善基準告示を可視化</li>
+              <li>「荷待積卸時間」、運行生産性を可視化⇒荷主交渉や経営改善のKPIを提供</li>
+            </ul>
+          </div>
+          <div class="seminar-product-group">
+            <p class="seminar-product-category">下請構造の可視化に必要なシステム</p>
+            <p class="seminar-product-name">TUMIX配車計画</p>
+            <ul class="seminar-product-list">
+              <li>配車から請求・支払まで一元管理</li>
+              <li>運行依頼書、車番連絡、受領書送付明細など日々業務帳票もサポート</li>
+              <li>「実運送体制管理簿」を出力可能</li>
+              <li>配車画面から空車情報を荷主へ発信</li>
+              <li>自車別の売上を目標対比で定期進捗管理</li>
+            </ul>
+          </div>
+        </div>
 
         <!-- 株式会社 NPシステム開発 -->
         <div class="seminar-company fade-up" id="company-np">
@@ -287,6 +331,42 @@ import CtaSection from '../components/CtaSection.astro';
               <li>商業用ナビゲーション搭載、最大6台のカメラ接続可能</li>
               <li>リアルタイムでの管理、各種日報や帳票を自動作成</li>
               <li>ドラレコ動画無制限取得可能、運行指示書連携</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 株式会社東計電算 -->
+        <div class="seminar-company fade-up" id="company-toukei">
+          <div class="seminar-company-header">
+            <div class="seminar-company-meta">
+              <img src={`${import.meta.env.BASE_URL}logo_toukei.png`} alt="東計電算 ロゴ" style="height:32px;width:auto;object-fit:contain;margin-bottom:var(--space-sm);display:block" />
+              <h3 class="seminar-company-name">株式会社東計電算</h3>
+              <a href="https://contact.toukei.co.jp/" class="seminar-company-url" target="_blank" rel="noopener noreferrer">https://contact.toukei.co.jp/</a>
+              <p class="seminar-company-desc" style="margin-top:var(--space-md)">
+                弊社は、物流業界に40年以上携わってきており、倉庫への入荷から顧客への配送までの全工程を一社でトータルカバーできるソリューション『ロジすぎる（総称）』を活用し、業務改善・改革に向けたシステムご提案・構築できることが強みです。業種特化した専門部隊の強みを生かし、小回りの利くシステムベンダーかつユーザー様のパートナーとして、全力サポートいたします。
+              </p>
+            </div>
+          </div>
+          <div class="seminar-product-group">
+            <p class="seminar-product-category">運送業務に係るデータを可視化して荷主等との交渉や経営改善を行うために必要なシステム</p>
+            <p class="seminar-product-name">1. 運行管理システム「TRUSTAR」<br>2. 運送業様向け販売管理システム「轟」</p>
+            <ul class="seminar-product-list">
+              <li>1. SaaS製品でスマートフォンを活用した運行管理アプリケーション。ドライバーによる実績登録を基に業務の可視化を実現。受注/配車～請求・支払業務までを一元管理。</li>
+              <li>2. 収支管理(荷主別・車両別・乗務員別など)で数値文化を定着化、経営改善をサポート。</li>
+            </ul>
+          </div>
+          <div class="seminar-product-group">
+            <p class="seminar-product-category">下請構造の可視化に必要なシステム</p>
+            <p class="seminar-product-name">1. 運行管理システム「TRUSTAR」<br>2. 運送業様向け販売管理システム「轟」</p>
+            <ul class="seminar-product-list">
+              <li>1、2ともに実運送体制管理簿作成に対応。</li>
+            </ul>
+          </div>
+          <div class="seminar-product-group">
+            <p class="seminar-product-category">輸配送の効率化に必要なシステム</p>
+            <p class="seminar-product-name">運行管理システム「TRUSTAR」</p>
+            <ul class="seminar-product-list">
+              <li>運行に関わる多数の運送会社の実績情報を一元管理。分断化されている配送情報の一気通貫を専用端末不要なアプリケーションで実現。</li>
             </ul>
           </div>
         </div>
